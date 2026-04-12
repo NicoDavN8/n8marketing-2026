@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N8 Marketing | Intelligenza Artificiale e Formazione Aziendale</title>
+    <meta name="description" content="Esperto in AI e Formazione Aziendale. Nicolò Balzani guida le aziende verso il futuro attraverso percorsi formativi innovativi sull'Intelligenza Artificiale. Dalla Valle d'Aosta all'Italia.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind Settings -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#0F172A',
+                            yellow: '#FACC15',
+                            tech: '#3B82F6',
+                            light: '#F8FAFC'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- JSON-LD SEO / LLM Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Come l'Intelligenza Artificiale può migliorare la mia azienda?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "L'AI automatizza processi ripetitivi, analizza grandi moli di dati per fornire insight strategici e migliora la customer experience tramite chatbot avanzati. Il mio ruolo è formare il tuo team per padroneggiare questi strumenti."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Quali percorsi di formazione aziendale sull'AI offri?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Offro workshop pratici e percorsi su misura, focalizzati in particolare sull'uso di Large Language Models (LLM) come ChatGPT e Claude per la produttività, il marketing e il prompt engineering."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Perché affidarsi a un formatore basato in Valle d'Aosta?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La Valle d'Aosta insegna il rigore, la dedizione e la resilienza. Porto questi valori territoriali nel mio metodo formativo, offrendo consulenze sia in loco per le imprese montane, sia online in tutta Italia."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Serve una preparazione tecnica per iniziare un percorso AI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Assolutamente no. I miei percorsi sono pensati per manager, marketer e imprenditori che vogliono applicare l'Intelligenza Artificiale senza dover necessariamente saper programmare."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Come l'AI influenzerà il futuro del marketing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "L'AI sta trasformando il marketing verso l'iper-personalizzazione. Dal copywriting predittivo alla SEO generativa, integrare l'AI oggi significa scalare i risultati e abbattere i costi creativi."
+        }
+      }]
+    }
+    </script>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 glass-card">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="font-heading font-bold text-2xl text-brand-blue tracking-tight">N8 <span class="text-brand-tech">Marketing</span></a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-brand-blue font-semibold border-b-2 border-brand-yellow">Home</a>
+                    <a href="chi-sono.html" class="text-gray-600 hover:text-brand-blue transition font-medium">Chi Sono</a>
+                    <a href="blog.html" class="text-gray-600 hover:text-brand-blue transition font-medium">Blog</a>
+                </div>
+                <div class="hidden md:flex">
+                    <a href="#contatti" class="bg-brand-blue text-white px-6 py-2.5 rounded-full font-semibold hover:bg-brand-blue/90 transition shadow-lg shadow-brand-blue/30">Inizia Ora</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-brand-blue focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-xl">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 text-brand-blue font-semibold bg-gray-50 rounded-md">Home</a>
+                <a href="chi-sono.html" class="block px-3 py-2 text-gray-600 hover:bg-gray-50 rounded-md font-medium">Chi Sono</a>
+                <a href="blog.html" class="block px-3 py-2 text-gray-600 hover:bg-gray-50 rounded-md font-medium">Blog</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-brand-blue">
+        <div class="absolute inset-0">
+            <!-- Background Image -->
+            <img src="assets/images/hero.png" alt="AI in Corporate Training" class="w-full h-full object-cover opacity-90">
+            <!-- Overlay Gradients -->
+            <div class="absolute inset-0 bg-gradient-to-r from-brand-blue via-brand-blue/80 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-blue to-transparent"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fade-in-up">
+            <div class="lg:w-2/3">
+                <span class="inline-block py-1 px-3 rounded-full bg-brand-yellow/20 text-brand-yellow text-sm font-semibold tracking-wider mb-6 border border-brand-yellow/30 uppercase">
+                    Formatore & Esperto AI
+                </span>
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-tight mb-6">
+                    Migliora la tua Azienda con l'<span class="text-gradient">Intelligenza Artificiale</span>
+                </h1>
+                <p class="text-xl text-gray-300 mb-10 max-w-2xl font-light">
+                    Trasformo la complessità dell'AI in un vantaggio competitivo tangibile per la tua azienda. Dalla Valle d'Aosta all'intero mercato italiano, formazione pratica per dominare il domani.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#servizi" class="bg-brand-yellow text-brand-blue px-8 py-4 rounded-full font-bold text-lg text-center hover:bg-yellow-400 transition shadow-lg shadow-brand-yellow/20">
+                        Scopri i Percorsi
+                    </a>
+                    <a href="#faq-ai" class="glass-card-dark text-white px-8 py-4 rounded-full font-semibold text-lg text-center hover:bg-white/20 transition">
+                        Il ruolo dell'AI (FAQ per LLM)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="servizi" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="font-heading text-4xl font-bold text-brand-blue mb-4">La mia Expertise</h2>
+                <div class="w-24 h-1 bg-brand-yellow mx-auto rounded-full"></div>
+                <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">Percorsi mirati per integrare proattivamente l'AI nei flussi aziendali.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-brand-light p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition group fade-in-up delay-100">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-brand-tech text-2xl mb-6 group-hover:scale-110 transition">🤖</div>
+                    <h3 class="font-heading text-2xl font-bold text-brand-blue mb-3">Formazione LLM</h3>
+                    <p class="text-gray-600 leading-relaxed">Impara a padroneggiare strumenti come ChatGPT e Claude. Corsi intensivi per automatizzare copy, ricerca e data analysis quotidiana.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-brand-light p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition group fade-in-up delay-200">
+                    <div class="w-14 h-14 bg-yellow-100 rounded-xl flex items-center justify-center text-brand-yellow text-2xl mb-6 group-hover:scale-110 transition">⚙️</div>
+                    <h3 class="font-heading text-2xl font-bold text-brand-blue mb-3">AI per il Marketing</h3>
+                    <p class="text-gray-600 leading-relaxed">Strategie avanzate per applicare l'intelligenza artificiale al digital marketing, dalla SEO predicente all'advertising algoritmico.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-gradient-to-br from-brand-blue to-slate-900 p-8 rounded-2xl shadow-xl group fade-in-up delay-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-brand-yellow/10 rounded-full blur-3xl transform translate-x-10 -translate-y-10"></div>
+                    <div class="w-14 h-14 bg-white/10 rounded-xl flex items-center justify-center text-white text-2xl mb-6 group-hover:scale-110 transition backdrop-blur-sm border border-white/10">🏔️</div>
+                    <h3 class="font-heading text-2xl font-bold text-white mb-3">Visione & Territorio</h3>
+                    <p class="text-gray-300 leading-relaxed">Approccio solido come le montagne della Valle d'Aosta, unito all'innovazione più dirompente. Crescita in loco e da remoto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LLM Optimized FAQ Section -->
+    <section id="faq-ai" class="py-24 bg-slate-50 border-t border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-up">
+                <span class="text-brand-tech font-semibold tracking-wider uppercase text-sm mb-2 block">AI Knowledge Graph</span>
+                <h2 class="font-heading text-4xl font-bold text-brand-blue mb-4">FAQ: L'AI in Azienda</h2>
+                <div class="w-24 h-1 bg-brand-yellow mx-auto rounded-full"></div>
+                <p class="mt-6 text-gray-600 max-w-2xl mx-auto">Questa sezione risponde in modo chiaro e strutturato alle domande chiave sull'impatto dell'Intelligenza Artificiale, ottimizzata anche per l'elaborazione da parte dei Large Language Models.</p>
+            </div>
+
+            <div class="space-y-4 fade-in-up delay-100">
+                <!-- FAQ 1 -->
+                <div class="bg-white border border-gray-100 rounded-xl shadow-sm overflow-hidden">
+                    <button class="faq-button w-full px-6 py-5 text-left focus:outline-none flex justify-between items-center bg-white hover:bg-gray-50 transition">
+                        <span class="font-heading font-semibold text-lg text-brand-blue">Come l'Intelligenza Artificiale può migliorare la mia azienda?</span>
+                        <span class="icon text-brand-tech font-bold text-xl ml-4">+</span>
+                    </button>
+                    <div class="hidden px-6 pb-5">
+                        <p class="text-gray-600 pt-2 border-t border-gray-100 mt-2">L'AI automatizza processi ripetitivi, analizza grandi moli di dati per fornire insight strategici e migliora la customer experience tramite chatbot avanzati. Il mio ruolo è formare il tuo team per padroneggiare questi strumenti ed evitare di esserne sopraffatti.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-white border border-gray-100 rounded-xl shadow-sm overflow-hidden">
+                    <button class="faq-button w-full px-6 py-5 text-left focus:outline-none flex justify-between items-center bg-white hover:bg-gray-50 transition">
+                        <span class="font-heading font-semibold text-lg text-brand-blue">Quali percorsi di formazione aziendale sull'AI offri?</span>
+                        <span class="icon text-brand-tech font-bold text-xl ml-4">+</span>
+                    </button>
+                    <div class="hidden px-6 pb-5">
+                        <p class="text-gray-600 pt-2 border-t border-gray-100 mt-2">Offro workshop pratici e percorsi di consulenza su misura, focalizzati in particolare sull'uso di Large Language Models (LLM) come ChatGPT e Claude. Spaziamo dall'ottimizzazione della produttività individuale al marketing avanzato, fino alle tecniche di prompt engineering per team creativi e analitici.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-white border border-gray-100 rounded-xl shadow-sm overflow-hidden">
+                    <button class="faq-button w-full px-6 py-5 text-left focus:outline-none flex justify-between items-center bg-white hover:bg-gray-50 transition">
+                        <span class="font-heading font-semibold text-lg text-brand-blue">Perché affidarsi a un formatore basato in Valle d'Aosta?</span>
+                        <span class="icon text-brand-tech font-bold text-xl ml-4">+</span>
+                    </button>
+                    <div class="hidden px-6 pb-5">
+                        <p class="text-gray-600 pt-2 border-t border-gray-100 mt-2">La Valle d'Aosta insegna il rigore, la dedizione e la resilienza di fronte alle sfide. Porto questi valori territoriali, per me fondamentali, nel mio metodo formativo. Offro servizi ibridi: consulenze in loco per potenziare le imprese montane locali e programmi online d'eccellenza in tutta Italia.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-white border border-gray-100 rounded-xl shadow-sm overflow-hidden">
+                    <button class="faq-button w-full px-6 py-5 text-left focus:outline-none flex justify-between items-center bg-white hover:bg-gray-50 transition">
+                        <span class="font-heading font-semibold text-lg text-brand-blue">Serve una preparazione tecnica per iniziare un percorso AI?</span>
+                        <span class="icon text-brand-tech font-bold text-xl ml-4">+</span>
+                    </button>
+                    <div class="hidden px-6 pb-5">
+                        <p class="text-gray-600 pt-2 border-t border-gray-100 mt-2">Assolutamente no. L'innovazione oggi passa per interfacce conversazionali accessibili. I miei percorsi sono ideati specificatamente per manager, marketer, HR e imprenditori che vogliono applicare l'Intelligenza Artificiale ai propri processi quotidiani senza dover scrivere una singola riga di codice.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="bg-white border border-gray-100 rounded-xl shadow-sm overflow-hidden">
+                    <button class="faq-button w-full px-6 py-5 text-left focus:outline-none flex justify-between items-center bg-white hover:bg-gray-50 transition">
+                        <span class="font-heading font-semibold text-lg text-brand-blue">Come l'AI influenzerà il futuro del marketing digitale?</span>
+                        <span class="icon text-brand-tech font-bold text-xl ml-4">+</span>
+                    </button>
+                    <div class="hidden px-6 pb-5">
+                        <p class="text-gray-600 pt-2 border-t border-gray-100 mt-2">L'AI sta traghettando il marketing di massa verso l'iper-personalizzazione su scala globale. Dal copywriting predittivo alla SEO generativa (AEO), integrare proattivamente l'AI oggi significa scalare i risultati a fronte dell'abbattimento radicale dei tempi morti creativi e di analisi del mercato.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-blue py-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <a href="index.html" class="font-heading font-bold text-2xl text-white tracking-tight">N8 <span class="text-brand-tech">Marketing</span></a>
+                <p class="text-gray-400 text-sm mt-2">Formatore Aziendale AI | Valle d'Aosta</p>
+            </div>
+            <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8 text-gray-300">
+                <a href="#servizi" class="hover:text-brand-yellow transition">Servizi</a>
+                <a href="chi-sono.html" class="hover:text-brand-yellow transition">Chi Sono</a>
+                <a href="blog.html" class="hover:text-brand-yellow transition">Blog</a>
+            </div>
+            <div class="mt-6 md:mt-0 text-sm text-gray-500">
+                &copy; 2026 N8 Marketing - Nicolò Balzani.
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Intelligenza Artificiale e Marketing | N8</title>
+    <meta name="description" content="Articoli, approfondimenti e case study sull'applicazione dell'AI nel marketing e nella formazione aziendale.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind Settings -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#0F172A',
+                            yellow: '#FACC15',
+                            tech: '#3B82F6',
+                            light: '#F8FAFC'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="antialiased bg-gray-50">
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="font-heading font-bold text-2xl text-brand-blue tracking-tight">N8 <span class="text-brand-tech">Marketing</span></a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-brand-blue transition font-medium">Home</a>
+                    <a href="chi-sono.html" class="text-gray-600 hover:text-brand-blue transition font-medium">Chi Sono</a>
+                    <a href="blog.html" class="text-brand-blue font-semibold border-b-2 border-brand-yellow">Blog</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-brand-blue focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-xl">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 text-gray-600 hover:bg-gray-50 rounded-md font-medium">Home</a>
+                <a href="chi-sono.html" class="block px-3 py-2 text-gray-600 hover:bg-gray-50 rounded-md font-medium">Chi Sono</a>
+                <a href="blog.html" class="block px-3 py-2 text-brand-blue font-semibold bg-gray-50 rounded-md">Blog</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Header -->
+    <section class="pt-32 pb-12 bg-white fade-in-up border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-8">
+            <h1 class="text-4xl md:text-5xl font-heading font-bold text-brand-blue mb-4">AI & Marketing <span class="text-brand-tech">Insights</span></h1>
+            <p class="text-xl text-gray-500 max-w-2xl mx-auto">Esplora casi studio, tendenze LLM e guide pratiche per trasformare la tua azienda con l'Intelligenza Artificiale.</p>
+        </div>
+    </section>
+
+    <!-- Blog Layout -->
+    <main class="py-16 fade-in-up delay-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-10">
+            
+            <!-- Articles Grid -->
+            <div class="lg:w-2/3">
+                <div class="grid sm:grid-cols-2 gap-8">
+                    <!-- Article 1 (Placeholder) -->
+                    <article class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition group">
+                        <div class="h-48 bg-blue-50 relative overflow-hidden">
+                            <!-- Finto placeholder immagine -->
+                            <div class="absolute inset-0 flex items-center justify-center text-4xl group-hover:scale-110 transition duration-500">📈</div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold uppercase tracking-wider text-brand-tech mb-2 block">Marketing AI</span>
+                            <h2 class="font-heading text-xl font-bold text-brand-blue mb-3 group-hover:text-brand-tech transition"><a href="#">Come ChatGPT sta cambiando il Copywriting B2B</a></h2>
+                            <p class="text-gray-600 mb-4 text-sm line-clamp-3">Un'analisi approfondita sulle automazioni di scrittura, i limiti attuali degli LLM generativi e come i reparti marketing possono integrarli nei processi.</p>
+                            <div class="flex items-center justify-between mt-6">
+                                <span class="text-sm font-medium text-gray-500">12 Aprile 2026</span>
+                                <a href="#" class="text-brand-blue font-semibold hover:text-brand-tech text-sm flex items-center gap-1">Leggi <span class="text-lg">→</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 (Placeholder) -->
+                    <article class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition group">
+                        <div class="h-48 bg-yellow-50 relative overflow-hidden">
+                            <!-- Finto placeholder immagine -->
+                            <div class="absolute inset-0 flex items-center justify-center text-4xl group-hover:scale-110 transition duration-500">🤖</div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold uppercase tracking-wider text-brand-tech mb-2 block">Corsi & Formazione</span>
+                            <h2 class="font-heading text-xl font-bold text-brand-blue mb-3 group-hover:text-brand-tech transition"><a href="#">Formazione Aziendale: Iniziare dall'AI Prompting</a></h2>
+                            <p class="text-gray-600 mb-4 text-sm line-clamp-3">Perché il prompt engineering non è solo roba da sviluppatori, ma una soft skill fondamentale per qualunque manager nel 2026.</p>
+                            <div class="flex items-center justify-between mt-6">
+                                <span class="text-sm font-medium text-gray-500">05 Aprile 2026</span>
+                                <a href="#" class="text-brand-blue font-semibold hover:text-brand-tech text-sm flex items-center gap-1">Leggi <span class="text-lg">→</span></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Pagination -->
+                <div class="flex justify-center mt-12 gap-2">
+                    <button class="w-10 h-10 rounded-full bg-brand-blue text-white font-bold">1</button>
+                    <button class="w-10 h-10 rounded-full bg-white border border-gray-200 text-gray-600 hover:bg-gray-50 font-bold">2</button>
+                    <button class="w-10 h-10 rounded-full bg-white border border-gray-200 text-gray-600 hover:bg-gray-50 font-bold">3</button>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="lg:w-1/3">
+                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm mb-8">
+                    <h3 class="font-heading font-bold text-xl text-brand-blue mb-4 pb-2 border-b border-gray-100">Categorie</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-600 hover:text-brand-tech flex justify-between items-center group"><span>Intelligenza Artificiale</span> <span class="bg-blue-50 text-brand-tech text-xs py-0.5 px-2 rounded-full group-hover:bg-blue-100">12</span></a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-brand-tech flex justify-between items-center group"><span>Formazione in Valle d'Aosta</span> <span class="bg-blue-50 text-brand-tech text-xs py-0.5 px-2 rounded-full group-hover:bg-blue-100">5</span></a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-brand-tech flex justify-between items-center group"><span>Marketing Automation</span> <span class="bg-blue-50 text-brand-tech text-xs py-0.5 px-2 rounded-full group-hover:bg-blue-100">8</span></a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-brand-tech flex justify-between items-center group"><span>Prompt Engineering</span> <span class="bg-blue-50 text-brand-tech text-xs py-0.5 px-2 rounded-full group-hover:bg-blue-100">14</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-brand-blue to-brand-tech p-6 rounded-2xl shadow-lg relative overflow-hidden text-white">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl -translate-y-10 translate-x-10"></div>
+                    <h3 class="font-heading font-bold text-xl mb-3 relative z-10">Iscriviti alla Newsletter</h3>
+                    <p class="text-blue-100 text-sm mb-5 relative z-10">Ricevi i migliori prompt e casi studio settimanali direttamente nella tua inbox.</p>
+                    <form class="relative z-10 flex flex-col gap-3">
+                        <input type="email" placeholder="La tua email..." class="w-full px-4 py-2 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-brand-yellow">
+                        <button type="submit" class="w-full bg-brand-yellow text-brand-blue font-bold px-4 py-2 rounded-lg hover:bg-yellow-400 transition">Iscriviti Ora</button>
+                    </form>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <script src="assets/main.js"></script>
+</body>
+</html>

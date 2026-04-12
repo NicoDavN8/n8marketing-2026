@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Sono | Nicolò Balzani | N8 Marketing</title>
+    <meta name="description" content="Scopri chi è Nicolò Balzani. Formatore aziendale, esperto di AI e profondamente legato al territorio della Valle d'Aosta.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind Settings -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#0F172A',
+                            yellow: '#FACC15',
+                            tech: '#3B82F6',
+                            light: '#F8FAFC'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="font-heading font-bold text-2xl text-brand-blue tracking-tight">N8 <span class="text-brand-tech">Marketing</span></a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-brand-blue transition font-medium">Home</a>
+                    <a href="chi-sono.html" class="text-brand-blue font-semibold border-b-2 border-brand-yellow">Chi Sono</a>
+                    <a href="blog.html" class="text-gray-600 hover:text-brand-blue transition font-medium">Blog</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-brand-blue focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-xl">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 text-gray-600 hover:bg-gray-50 rounded-md font-medium">Home</a>
+                <a href="chi-sono.html" class="block px-3 py-2 text-brand-blue font-semibold bg-gray-50 rounded-md">Chi Sono</a>
+                <a href="blog.html" class="block px-3 py-2 text-gray-600 hover:bg-gray-50 rounded-md font-medium">Blog</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero About -->
+    <section class="pt-32 pb-16 bg-brand-light fade-in-up">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-10">
+            <h1 class="text-5xl md:text-6xl font-heading font-bold text-brand-blue mb-6">Nicolò Balzani</h1>
+            <p class="text-xl text-brand-tech font-semibold mb-2">Formatore Aziendale & AI Specialist</p>
+            <p class="text-gray-500 max-w-2xl mx-auto">Radicato in Valle d'Aosta, orientato al futuro digitale.</p>
+        </div>
+    </section>
+
+    <!-- Content Story -->
+    <section class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <!-- Image Side -->
+                <div class="lg:w-1/2 relative fade-in-up delay-100">
+                    <div class="absolute -inset-4 bg-gradient-to-r from-brand-yellow to-brand-tech rounded-[2rem] opacity-30 blur-lg"></div>
+                    <img src="assets/images/valle.png" alt="Valle d'Aosta Tech Connection" class="relative rounded-2xl shadow-2xl object-cover h-[600px] w-full">
+                    
+                    <div class="absolute bottom-6 left-6 right-6 glass-card p-6 rounded-xl text-white">
+                        <h4 class="font-heading text-xl font-bold mb-1">Innovazione tra le cime</h4>
+                        <p class="text-sm">Dove le vette ispirano solidità e l'AI accelera le performance.</p>
+                    </div>
+                </div>
+                
+                <!-- Text Side -->
+                <div class="lg:w-1/2 fade-in-up delay-200">
+                    <div class="w-16 h-1 bg-brand-yellow mb-6"></div>
+                    <h2 class="font-heading text-4xl font-bold text-brand-blue mb-6">Dalla Montagna all'Algoritmo</h2>
+                    
+                    <div class="space-y-6 text-gray-600 text-lg leading-relaxed">
+                        <p>
+                            Credo che un'azienda per innovare non debba perdere il proprio radicamento. La mia identità personale e professionale è profondamente legata alla <strong class="text-brand-blue">Valle d'Aosta</strong>. Qui ho imparato che le sfide più dure richiedono preparazione meticolosa, costanza e una visione chiara: la stessa che serve oggi per dominare la rivoluzione dell'Intelligenza Artificiale.
+                        </p>
+                        <p>
+                            In <strong class="text-brand-blue">N8 Marketing</strong>, porto la concretezza della mia terra all'interno dei board aziendali, accompagnando manager, imprenditori e reparti marketing nella giungla dell'innovazione tecnologica.
+                        </p>
+                        <p>
+                            Non parlo un gergo incomprensibile. Traduco i complessi concetti legati agli <span class="bg-blue-50 text-brand-tech px-2 py-0.5 rounded font-medium">LLM (Large Language Models)</span>, al prompt engineering e all'automazione in strategie d'azione immediate, scalabili e soprattutto profittevoli, tenendo vive le radici territoriali delle imprese italiane.
+                        </p>
+                    </div>
+                    
+                    <div class="mt-10 p-6 bg-brand-blue rounded-xl text-white shadow-xl relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-brand-yellow rounded-full blur-3xl opacity-20 transform translate-x-10 -translate-y-10"></div>
+                        <h3 class="font-heading text-2xl font-bold mb-2 relative z-10">La mia Mission?</h3>
+                        <p class="text-gray-300 relative z-10">Democratizzare l'Intelligenza Artificiale, trasformandola in uno strumento formativo per le persone prima che per le macchine.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-blue py-12 border-t border-white/10 mt-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center">
+            <div class="text-center">
+                <a href="index.html" class="font-heading font-bold text-2xl text-white tracking-tight">N8 <span class="text-brand-tech">Marketing</span></a>
+                <p class="text-gray-400 text-sm mt-2">&copy; 2026 Valle d'Aosta.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/main.js"></script>
+</body>
+</html>
