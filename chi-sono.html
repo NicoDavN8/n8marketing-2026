@@ -38,19 +38,22 @@
 <body class="antialiased">
 
     <!-- Header -->
-    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm">
+    <header class="fixed w-full top-0 z-50 bg-black/90 backdrop-blur-md border-b border-[#4e81ee] shadow-2xl">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="index.html" class="font-heading font-bold text-2xl text-brand-blue tracking-tight">N8 <span class="text-brand-tech">Marketing</span></a>
+                    <a href="index.html" class="flex items-center gap-3 font-heading font-bold text-2xl tracking-tight">
+                        <img src="assets/images/logo.png" alt="N8 Logo" class="h-16 w-auto"> 
+                        <span class="text-[#f1d74d]">N8</span> <span class="text-brand-tech">Marketing</span>
+                    </a>
                 </div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-gray-600 hover:text-brand-blue transition font-medium">Home</a>
-                    <a href="chi-sono.html" class="text-brand-blue font-semibold border-b-2 border-brand-yellow">Chi Sono</a>
-                    <a href="blog.html" class="text-gray-600 hover:text-brand-blue transition font-medium">Blog</a>
+                    <a href="index.html" class="text-[#4e81ee] hover:text-[#f1d74d] transition font-medium">Home</a>
+                    <a href="chi-sono.html" class="text-[#4e81ee] font-semibold border-b-2 border-[#f1d74d]">Chi Sono</a>
+                    <a href="blog.html" class="text-[#4e81ee] hover:text-[#f1d74d] transition font-medium">Blog</a>
                 </div>
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-brand-blue focus:outline-none">
+                    <button id="mobile-menu-btn" class="text-white hover:text-[#f1d74d] focus:outline-none transition">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                         </svg>
@@ -59,11 +62,11 @@
             </div>
         </div>
         <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-xl">
+        <div id="mobile-menu" class="hidden md:hidden bg-black border-b border-[#4e81ee] shadow-xl">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="index.html" class="block px-3 py-2 text-gray-600 hover:bg-gray-50 rounded-md font-medium">Home</a>
-                <a href="chi-sono.html" class="block px-3 py-2 text-brand-blue font-semibold bg-gray-50 rounded-md">Chi Sono</a>
-                <a href="blog.html" class="block px-3 py-2 text-gray-600 hover:bg-gray-50 rounded-md font-medium">Blog</a>
+                <a href="index.html" class="block px-3 py-2 text-[#4e81ee] hover:bg-white/5 hover:text-[#f1d74d] rounded-md font-medium transition">Home</a>
+                <a href="chi-sono.html" class="block px-3 py-2 text-[#4e81ee] font-semibold bg-white/10 rounded-md">Chi Sono</a>
+                <a href="blog.html" class="block px-3 py-2 text-[#4e81ee] hover:bg-white/5 hover:text-[#f1d74d] rounded-md font-medium transition">Blog</a>
             </div>
         </div>
     </header>
