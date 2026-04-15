@@ -77,6 +77,53 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #e6bc00;
 }
 
+/* Bottone secondario hero — bordo ovale giallo, sfondo trasparente */
+.hero-btn-secondary {
+  background: transparent;
+  border: 1.5px solid #FACC15;
+  color: #FACC15;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.hero-btn-secondary:hover {
+  background: rgba(250, 204, 21, 0.12);
+}
+
+/* Hero CTA wrapper — gap e layout */
+.hero-cta-wrapper {
+  gap: 1rem; /* 16px desktop */
+}
+
+@media (max-width: 640px) {
+  .hero-cta-wrapper {
+    gap: 15px; /* 15px mobile come richiesto */
+  }
+}
+
+/* =============================================
+   Footer — Icone Social
+   ============================================= */
+
+.footer-social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  color: #94a3b8;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-social-icon:hover {
+  color: #FACC15;
+  background: rgba(250, 204, 21, 0.1);
+  border-color: rgba(250, 204, 21, 0.4);
+  transform: translateY(-2px);
+}
+
 /* =============================================
    Expertise Carousel
    ============================================= */
