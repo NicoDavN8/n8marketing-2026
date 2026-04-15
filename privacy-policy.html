@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | N8 Marketing</title>
+    <meta name="description" content="Informativa sul trattamento dei dati personali di N8 Marketing, ai sensi del Regolamento UE 2016/679 (GDPR).">
+    <meta name="robots" content="noindex, follow">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue:   '#0F172A',
+                            yellow: '#FACC15',
+                            tech:   '#3B82F6',
+                            light:  '#F8FAFC'
+                        }
+                    },
+                    fontFamily: {
+                        sans:    ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="antialiased bg-[#07090f] text-gray-300">
+
+    <!-- ═══════════════════════════════════════
+         HEADER (identico all'index)
+    ═══════════════════════════════════════ -->
+    <header class="fixed w-full top-0 z-50 bg-black/90 backdrop-blur-md border-b border-[#4e81ee] shadow-2xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-4 font-heading tracking-tight">
+                        <img src="assets/images/logo.png" alt="N8 Logo" class="h-16 w-auto">
+                        <span class="flex items-center">
+                            <span class="text-[#f1d74d] font-black text-3xl">N8</span>
+                            <span class="text-[#4e81ee] font-medium text-2xl ml-1.5">Marketing</span>
+                            <span class="text-[#4e81ee] border border-[#4e81ee] px-1.5 py-0.5 rounded text-[0.65rem] font-bold tracking-widest ml-2 bg-[#4e81ee]/10">AI</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-[#4e81ee] hover:text-[#f1d74d] transition font-medium">Home</a>
+                    <a href="chi-sono.html" class="text-[#4e81ee] hover:text-[#f1d74d] transition font-medium">Chi Siamo</a>
+                    <a href="blog.html" class="text-[#4e81ee] hover:text-[#f1d74d] transition font-medium">Blog</a>
+                </div>
+                <div class="hidden md:flex">
+                    <a href="index.html#contatti" class="bg-[#f1d74d] text-black px-6 py-2.5 rounded-full font-semibold hover:bg-[#e0c644] transition shadow-lg shadow-[#f1d74d]/30">Contattaci!</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white hover:text-[#f1d74d] focus:outline-none transition">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black border-b border-[#4e81ee] shadow-xl">
+            <div class="px-2 pt-2 pb-2 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 text-[#4e81ee] hover:text-[#f1d74d] hover:bg-white/5 rounded-md font-medium transition">Home</a>
+                <a href="chi-sono.html" class="block px-3 py-2 text-[#4e81ee] hover:text-[#f1d74d] hover:bg-white/5 rounded-md font-medium transition">Chi Siamo</a>
+                <a href="blog.html" class="block px-3 py-2 text-[#4e81ee] hover:text-[#f1d74d] hover:bg-white/5 rounded-md font-medium transition">Blog</a>
+            </div>
+            <div class="px-4 pb-4 pt-1">
+                <a href="index.html#contatti" class="block w-full text-center px-6 py-3 bg-[#f1d74d] text-black font-bold rounded-full hover:bg-[#e0c644] transition shadow-md shadow-[#f1d74d]/30">Contattaci!</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ═══════════════════════════════════════
+         HERO — Breadcrumb + titolo pagina
+    ═══════════════════════════════════════ -->
+    <section class="pt-32 pb-12 bg-[#07090f] border-b border-white/5">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+            <!-- Breadcrumb -->
+            <nav class="flex items-center gap-2 text-xs text-gray-500 mb-6" aria-label="Breadcrumb">
+                <a href="index.html" class="hover:text-[#f1d74d] transition">Home</a>
+                <span>/</span>
+                <span class="text-gray-400">Privacy Policy</span>
+            </nav>
+            <span class="inline-block py-1 px-3 rounded-full bg-[#4e81ee]/10 text-[#4e81ee] text-xs font-semibold tracking-wider mb-4 border border-[#4e81ee]/20 uppercase">Documento Legale</span>
+            <h1 class="font-heading text-4xl md:text-5xl font-bold text-white mb-3">Privacy Policy</h1>
+            <p class="text-gray-500 text-sm">Ultimo aggiornamento: <time datetime="2026-04-15">15 Aprile 2026</time></p>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         CONTENUTO — Privacy Policy
+    ═══════════════════════════════════════ -->
+    <main class="py-16 bg-[#07090f]">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Intro -->
+            <div class="privacy-intro mb-12 p-6 rounded-2xl border border-[#4e81ee]/20 bg-[#4e81ee]/5">
+                <p class="text-gray-300 leading-relaxed text-lg">
+                    Noi di <strong class="text-white">N8 Marketing</strong> prendiamo seriamente la protezione dei vostri dati. Questa informativa descrive come raccogliamo, utilizziamo e proteggiamo le informazioni personali in conformità al <strong class="text-[#4e81ee]">Regolamento UE 2016/679 (GDPR)</strong>.
+                </p>
+            </div>
+
+            <!-- Sezioni -->
+            <div class="space-y-12">
+
+                <!-- 1. Titolare -->
+                <section class="privacy-section">
+                    <h2 class="privacy-h2">1. Titolare del Trattamento</h2>
+                    <p class="privacy-p">Il titolare del trattamento è <strong class="text-white">Nicolò Balzani</strong>, per conto di <strong class="text-white">N8 Marketing</strong>.</p>
+                    <div class="mt-4 grid sm:grid-cols-2 gap-4">
+                        <div class="privacy-info-box">
+                            <span class="privacy-label">Sede Legale</span>
+                            <span>Str. La Ruine, 70<br>11017 Morgex (AO)</span>
+                        </div>
+                        <div class="privacy-info-box sm:col-span-1">
+                            <span class="privacy-label">Sedi Operative</span>
+                            <span>Frazione Cheriettes, 70 — 11010 Aymavilles (AO)<br>Via Circonvallazione, 86 — 11013 Courmayeur (AO)</span>
+                        </div>
+                        <div class="privacy-info-box">
+                            <span class="privacy-label">Email</span>
+                            <a href="mailto:n8@n8marketing.it" class="text-[#f1d74d] hover:underline">n8@n8marketing.it</a>
+                        </div>
+                        <div class="privacy-info-box">
+                            <span class="privacy-label">PEC</span>
+                            <a href="mailto:nicolo.balzani@pec.net" class="text-[#f1d74d] hover:underline">nicolo.balzani@pec.net</a>
+                        </div>
+                    </div>
+                </section>
+
+                <hr class="privacy-divider">
+
+                <!-- 2. Dati Raccolti -->
+                <section class="privacy-section">
+                    <h2 class="privacy-h2">2. Dati Raccolti</h2>
+                    <p class="privacy-p">Raccogliamo i seguenti dati tramite il nostro sito web e le interazioni professionali:</p>
+                    <ul class="privacy-list">
+                        <li><strong class="text-white">Dati di contatto:</strong> Nome, email, numero di telefono forniti tramite moduli di contatto.</li>
+                        <li><strong class="text-white">Dati di navigazione:</strong> Indirizzi IP, tipo di browser, parametri del dispositivo tramite cookie (Google Analytics, Facebook Pixel).</li>
+                        <li><strong class="text-white">Interazioni Social:</strong> Dati derivanti dall'interazione con i nostri profili Facebook, Instagram e LinkedIn.</li>
+                    </ul>
+                </section>
+
+                <hr class="privacy-divider">
+
+                <!-- 3. Finalità + AI -->
+                <section class="privacy-section">
+                    <h2 class="privacy-h2">3. Finalità del Trattamento e Intelligenza Artificiale</h2>
+                    <p class="privacy-p">I dati vengono trattati per:</p>
+                    <ul class="privacy-list">
+                        <li>Rispondere alle vostre richieste di consulenza o formazione.</li>
+                        <li>Analizzare il traffico per migliorare l'esperienza utente.</li>
+                        <li>Inviare comunicazioni di marketing (solo previo consenso).</li>
+                    </ul>
+                    <div class="mt-6 p-5 rounded-xl bg-[#f1d74d]/5 border border-[#f1d74d]/20">
+                        <p class="text-sm text-gray-300 leading-relaxed">
+                            <strong class="text-[#f1d74d]">Etica e AI:</strong> N8 Marketing si impegna a non utilizzare i dati personali dei propri utenti per l'addestramento non autorizzato di modelli di Intelligenza Artificiale di terze parti. L'uso dell'AI nei nostri processi è limitato all'analisi statistica e all'ottimizzazione dei servizi nel rispetto della privacy.
+                        </p>
+                    </div>
+                </section>
+
+                <hr class="privacy-divider">
+
+                <!-- 4. Basi Legali -->
+                <section class="privacy-section">
+                    <h2 class="privacy-h2">4. Basi Legali</h2>
+                    <p class="privacy-p">Il trattamento si fonda sul vostro consenso, sull'esecuzione di un contratto o sul nostro legittimo interesse a promuovere i servizi dell'agenzia.</p>
+                </section>
+
+                <hr class="privacy-divider">
+
+                <!-- 5. Destinatari -->
+                <section class="privacy-section">
+                    <h2 class="privacy-h2">5. Destinatari dei Dati</h2>
+                    <p class="privacy-p">I dati non vengono venduti a terzi. Possono essere condivisi con fornitori di servizi tecnologici (hosting, cloud) o autorità competenti se richiesto dalla legge. Come soci di <strong class="text-white">EMSy™</strong>, potremmo collaborare su progetti specifici garantendo sempre i massimi standard di sicurezza.</p>
+                </section>
+
+                <hr class="privacy-divider">
+
+                <!-- 6. Trasferimento Extra-UE -->
+                <section class="privacy-section">
+                    <h2 class="privacy-h2">6. Trasferimento Dati Extra-UE</h2>
+                    <p class="privacy-p">Alcuni strumenti (es. Google, Meta) possono trasferire dati negli Stati Uniti. Tale trasferimento avviene sulla base di clausole contrattuali standard approvate dalla Commissione Europea.</p>
+                </section>
+
+                <hr class="privacy-divider">
+
+                <!-- 7. Diritti -->
+                <section class="privacy-section">
+                    <h2 class="privacy-h2">7. I Vostri Diritti</h2>
+                    <p class="privacy-p">In conformità al GDPR, avete il diritto di:</p>
+                    <ul class="privacy-list">
+                        <li>Accedere ai vostri dati.</li>
+                        <li>Richiederne la rettifica o la cancellazione (diritto all'oblio).</li>
+                        <li>Opporvi al trattamento per finalità di marketing.</li>
+                        <li>Richiedere la portabilità dei dati.</li>
+                    </ul>
+                    <p class="privacy-p mt-4">Per esercitare questi diritti, scriveteci a: <a href="mailto:n8@n8marketing.it" class="text-[#f1d74d] font-semibold hover:underline">n8@n8marketing.it</a></p>
+                </section>
+
+                <hr class="privacy-divider">
+
+                <!-- 8. Cookie Policy -->
+                <section class="privacy-section">
+                    <h2 class="privacy-h2">8. Cookie Policy</h2>
+                    <p class="privacy-p">Il nostro sito utilizza cookie tecnici e di terze parti per finalità analitiche e di marketing. Potete gestire le preferenze tramite il banner presente sul sito o le impostazioni del browser.</p>
+                </section>
+
+            </div>
+
+            <!-- Footer nota -->
+            <div class="mt-16 pt-8 border-t border-white/10 text-center">
+                <p class="text-gray-600 text-sm italic">N8 Marketing — Marketing Strategico &amp; AI per il territorio</p>
+                <a href="index.html" class="inline-flex items-center gap-2 mt-4 text-[#4e81ee] text-sm hover:text-[#f1d74d] transition">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+                    Torna alla Homepage
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ═══════════════════════════════════════
+         FOOTER (identico all'index)
+    ═══════════════════════════════════════ -->
+    <footer class="bg-[#07090f] border-t border-white/10">
+
+        <!-- Main footer grid -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+                <!-- Col 1: Brand + social -->
+                <div>
+                    <a href="index.html" class="flex items-center gap-3 mb-4">
+                        <img src="assets/images/logo.png" alt="N8 Marketing" class="h-10 w-auto">
+                        <span class="font-heading font-bold text-xl flex items-center gap-1.5">
+                            <span class="text-[#f1d74d] font-black">N8</span>
+                            <span class="text-[#4e81ee] font-medium">Marketing</span>
+                            <span class="text-[#4e81ee] border border-[#4e81ee] px-1 py-0.5 rounded text-[0.55rem] font-bold tracking-widest bg-[#4e81ee]/10">AI</span>
+                        </span>
+                    </a>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-5">Marketing Strategico &amp; AI per il territorio</p>
+                    <div class="flex gap-3">
+                        <a href="https://www.facebook.com/nbalzani" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Facebook">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/n8marketing" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Instagram">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nicolo-balzani/" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="LinkedIn">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Sedi -->
+                <div>
+                    <h4 class="footer-col-title">Dove siamo</h4>
+                    <div class="space-y-4 text-sm text-gray-400 leading-relaxed">
+                        <div>
+                            <span class="text-gray-200 font-medium block mb-0.5">Sede Operativa</span>
+                            Frazione Cheriettes, 70<br>11010 Aymavilles (AO)
+                        </div>
+                        <div>
+                            <span class="text-gray-200 font-medium block mb-0.5">Sede Operativa</span>
+                            Via Circonvallazione, 86<br>11013 Courmayeur (AO)
+                        </div>
+                        <div>
+                            <span class="text-gray-200 font-medium block mb-0.5">Sede Legale</span>
+                            Str. La Ruine, 70<br>11017 Morgex (AO)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Col 3: Contatti -->
+                <div>
+                    <h4 class="footer-col-title">Contatti</h4>
+                    <div class="space-y-2 text-sm text-gray-400">
+                        <div>
+                            <span class="text-gray-500 text-xs uppercase tracking-wide block mb-0.5">Tel</span>
+                            <a href="tel:+393336771270" class="hover:text-brand-yellow transition">+39 333 67 71 270</a>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 text-xs uppercase tracking-wide block mb-0.5">Email</span>
+                            <a href="mailto:n8@n8marketing.it" class="hover:text-brand-yellow transition">n8@n8marketing.it</a>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 text-xs uppercase tracking-wide block mb-0.5">PEC</span>
+                            <a href="mailto:nicolo.balzani@pec.net" class="hover:text-brand-yellow transition">nicolo.balzani@pec.net</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Col 4: Navigazione -->
+                <div>
+                    <h4 class="footer-col-title">Navigazione</h4>
+                    <div class="space-y-2 text-sm text-gray-400">
+                        <a href="index.html" class="block hover:text-brand-yellow transition">Home</a>
+                        <a href="index.html#servizi" class="block hover:text-brand-yellow transition">Servizi</a>
+                        <a href="chi-sono.html" class="block hover:text-brand-yellow transition">Chi Siamo</a>
+                        <a href="blog.html" class="block hover:text-brand-yellow transition">Blog</a>
+                        <a href="index.html#contatti" class="block hover:text-brand-yellow transition font-medium text-[#f1d74d]">Contattaci</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="border-t border-white/10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row justify-between items-center gap-3">
+                <p class="text-gray-500 text-xs">&copy; 2026 N8 Marketing &mdash; Nicolò Balzani. Tutti i diritti riservati.</p>
+                <div class="flex items-center gap-5 text-xs text-gray-500">
+                    <a href="privacy-policy.html" class="text-[#4e81ee] font-medium hover:text-[#f1d74d] transition">Privacy Policy</a>
+                    <span class="text-white/10">|</span>
+                    <a href="#" class="hover:text-gray-300 transition">Cookies</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Privacy Policy — stili interni -->
+    <style>
+        .privacy-h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.375rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.75rem;
+            padding-left: 0.75rem;
+            border-left: 3px solid #4e81ee;
+        }
+        .privacy-p {
+            color: #94a3b8;
+            line-height: 1.75;
+            font-size: 0.9375rem;
+        }
+        .privacy-list {
+            list-style: none;
+            margin-top: 0.75rem;
+            space-y: 0.5rem;
+            padding: 0;
+        }
+        .privacy-list li {
+            color: #94a3b8;
+            font-size: 0.9375rem;
+            line-height: 1.75;
+            padding-left: 1.25rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+        }
+        .privacy-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #4e81ee;
+            font-size: 0.8rem;
+            top: 0.25rem;
+        }
+        .privacy-divider {
+            border: none;
+            border-top: 1px solid rgba(255,255,255,0.06);
+        }
+        .privacy-info-box {
+            background: rgba(78,129,238,0.06);
+            border: 1px solid rgba(78,129,238,0.15);
+            border-radius: 0.75rem;
+            padding: 0.875rem 1rem;
+            font-size: 0.875rem;
+            color: #94a3b8;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+        .privacy-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #4e81ee;
+            margin-bottom: 0.125rem;
+        }
+    </style>
+
+    <script src="assets/main.js"></script>
+</body>
+</html>
