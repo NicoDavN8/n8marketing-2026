@@ -42,15 +42,22 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="index.html" class="flex items-center gap-3 font-heading font-bold text-2xl tracking-tight">
-                        <img src="assets/images/logo.png" alt="N8 Logo" class="h-16 w-auto"> 
-                        <span class="text-[#f1d74d]">N8</span> <span class="text-brand-tech">Marketing</span>
+                    <a href="index.html" class="flex items-center gap-4 font-heading tracking-tight">
+                        <img src="assets/images/logo.png" alt="N8 Logo" class="h-16 w-auto">
+                        <span class="flex items-center">
+                            <span class="text-[#f1d74d] font-black text-3xl">N8</span>
+                            <span class="text-[#4e81ee] font-medium text-2xl ml-1.5">Marketing</span>
+                            <span class="text-[#4e81ee] border border-[#4e81ee] px-1.5 py-0.5 rounded text-[0.65rem] font-bold tracking-widest ml-2 bg-[#4e81ee]/10">AI</span>
+                        </span>
                     </a>
                 </div>
                 <div class="hidden md:flex space-x-8">
                     <a href="index.html" class="text-[#4e81ee] hover:text-[#f1d74d] transition font-medium">Home</a>
-                    <a href="chi-sono.html" class="text-[#4e81ee] hover:text-[#f1d74d] transition font-medium">Chi Sono</a>
-                    <a href="blog.html" class="text-[#4e81ee] font-semibold border-b-2 border-[#f1d74d]">Blog</a>
+                    <a href="chi-sono.html" class="text-[#4e81ee] hover:text-[#f1d74d] transition font-medium">Chi Siamo</a>
+                    <a href="blog.html" class="text-[#4e81ee] hover:text-[#f1d74d] font-semibold border-b-2 border-[#f1d74d] transition">Blog</a>
+                </div>
+                <div class="hidden md:flex">
+                    <a href="index.html#contatti" class="bg-[#f1d74d] text-black px-6 py-2.5 rounded-full font-semibold hover:bg-[#e0c644] transition shadow-lg shadow-[#f1d74d]/30">Contattaci!</a>
                 </div>
                 <div class="md:hidden flex items-center">
                     <button id="mobile-menu-btn" class="text-white hover:text-[#f1d74d] focus:outline-none transition">
@@ -63,10 +70,13 @@
         </div>
         <!-- Mobile menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-black border-b border-[#4e81ee] shadow-xl">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="index.html" class="block px-3 py-2 text-[#4e81ee] hover:bg-white/5 hover:text-[#f1d74d] rounded-md font-medium transition">Home</a>
-                <a href="chi-sono.html" class="block px-3 py-2 text-[#4e81ee] hover:bg-white/5 hover:text-[#f1d74d] rounded-md font-medium transition">Chi Sono</a>
+            <div class="px-2 pt-2 pb-2 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 text-[#4e81ee] hover:text-[#f1d74d] hover:bg-white/5 rounded-md font-medium transition">Home</a>
+                <a href="chi-sono.html" class="block px-3 py-2 text-[#4e81ee] hover:text-[#f1d74d] hover:bg-white/5 rounded-md font-medium transition">Chi Siamo</a>
                 <a href="blog.html" class="block px-3 py-2 text-[#4e81ee] font-semibold bg-white/10 rounded-md">Blog</a>
+            </div>
+            <div class="px-4 pb-4 pt-1">
+                <a href="index.html#contatti" class="block w-full text-center px-6 py-3 bg-[#f1d74d] text-black font-bold rounded-full hover:bg-[#e0c644] transition shadow-md shadow-[#f1d74d]/30">Contattaci!</a>
             </div>
         </div>
     </header>
