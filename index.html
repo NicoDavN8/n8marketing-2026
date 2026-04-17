@@ -291,13 +291,17 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col lg:flex-row items-start gap-6 lg:gap-8 justify-between fade-in-up">
                 <h2 class="font-heading text-xl lg:text-2xl font-bold text-[#4e81ee] shrink-0 whitespace-nowrap pt-3">Scrivici, siamo qui per te!</h2>
+                <!-- Iframe nascosto: riceve la risposta di SMShosting senza navigare -->
+                <iframe name="hidden_confirm" id="hidden_confirm" style="display:none;" aria-hidden="true"></iframe>
+
                 <form method="POST"
                       action="https://www.smshosting.it/it/form/iscrizione/salva"
+                      target="hidden_confirm"
+                      onsubmit="setTimeout(function(){ window.location.href='https://nicodavn8.github.io/n8marketing-2026/grazie.html'; }, 500);"
                       class="flex flex-col gap-3 w-full flex-grow">
 
-                    <!-- Campi nascosti SMShosting -->
+                    <!-- Campo nascosto: ID form SMShosting -->
                     <input type="hidden" name="formId" value="qBGTYLtCd7uWhdKlbDWwTBJQbF1d0tuCSBnORAxCFv4ZWoWSX4PWn2sQ1qSGI1zL">
-                    <input type="hidden" name="_next"  value="https://nicodavn8.github.io/n8marketing-2026/grazie.html">
 
                     <!-- Row 1: inputs + button -->
                     <div class="flex flex-col sm:flex-row gap-4 items-center justify-end">
