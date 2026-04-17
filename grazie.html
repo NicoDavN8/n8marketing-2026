@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grazie! | N8 Marketing</title>
+    <meta name="description" content="Richiesta inviata con successo. Ti risponderemo al più presto.">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue:   '#0F172A',
+                            yellow: '#FACC15',
+                            tech:   '#3B82F6',
+                            light:  '#F8FAFC'
+                        }
+                    },
+                    fontFamily: {
+                        sans:    ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="antialiased bg-[#07090f] text-gray-300">
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 bg-black/90 backdrop-blur-md border-b border-[#4e81ee] shadow-2xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-4 font-heading tracking-tight">
+                        <img src="assets/images/logo.png" alt="N8 Logo" class="h-16 w-auto">
+                        <span class="flex items-center">
+                            <span class="text-[#f1d74d] font-black text-3xl">N8</span>
+                            <span class="text-[#4e81ee] font-medium text-2xl ml-1.5">Marketing</span>
+                            <span class="text-[#4e81ee] border border-[#4e81ee] px-1.5 py-0.5 rounded text-[0.65rem] font-bold tracking-widest ml-2 bg-[#4e81ee]/10">AI</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-[#4e81ee] hover:text-[#f1d74d] transition font-medium">Home</a>
+                    <a href="chi-sono.html" class="text-[#4e81ee] hover:text-[#f1d74d] transition font-medium">Chi Siamo</a>
+                    <a href="blog.html" class="text-[#4e81ee] hover:text-[#f1d74d] transition font-medium">Blog</a>
+                </div>
+                <div class="hidden md:flex">
+                    <a href="index.html#contatti" class="bg-[#f1d74d] text-black px-6 py-2.5 rounded-full font-semibold hover:bg-[#e0c644] transition shadow-lg shadow-[#f1d74d]/30">Contattaci!</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white hover:text-[#f1d74d] focus:outline-none transition">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black border-b border-[#4e81ee] shadow-xl">
+            <div class="px-2 pt-2 pb-2 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 text-[#4e81ee] hover:text-[#f1d74d] hover:bg-white/5 rounded-md font-medium transition">Home</a>
+                <a href="chi-sono.html" class="block px-3 py-2 text-[#4e81ee] hover:text-[#f1d74d] hover:bg-white/5 rounded-md font-medium transition">Chi Siamo</a>
+                <a href="blog.html" class="block px-3 py-2 text-[#4e81ee] hover:text-[#f1d74d] hover:bg-white/5 rounded-md font-medium transition">Blog</a>
+            </div>
+            <div class="px-4 pb-4 pt-1">
+                <a href="index.html#contatti" class="block w-full text-center px-6 py-3 bg-[#f1d74d] text-black font-bold rounded-full hover:bg-[#e0c644] transition shadow-md shadow-[#f1d74d]/30">Contattaci!</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Thank You Content -->
+    <main class="min-h-screen flex items-center justify-center px-4 py-32">
+        <div class="max-w-lg w-full text-center">
+
+            <!-- Icona successo -->
+            <div class="w-20 h-20 rounded-full bg-[#f1d74d]/10 border-2 border-[#f1d74d]/40 flex items-center justify-center mx-auto mb-8">
+                <svg class="w-10 h-10 text-[#f1d74d]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+            </div>
+
+            <!-- Badge -->
+            <span class="inline-block py-1 px-3 rounded-full bg-[#4e81ee]/10 text-[#4e81ee] text-xs font-semibold tracking-wider mb-5 border border-[#4e81ee]/20 uppercase">Messaggio Inviato</span>
+
+            <!-- Titolo -->
+            <h1 class="font-heading text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                Grazie!
+            </h1>
+
+            <!-- Messaggio -->
+            <p class="text-gray-400 text-lg leading-relaxed mb-10">
+                La tua richiesta è stata inviata correttamente.<br>
+                Ti risponderemo su <a href="mailto:n8@n8marketing.it" class="text-[#f1d74d] hover:underline font-medium">n8@n8marketing.it</a> il prima possibile.
+            </p>
+
+            <!-- CTA -->
+            <a href="index.html" class="inline-block bg-[#f1d74d] text-black font-bold px-10 py-4 rounded-full text-base hover:bg-yellow-400 transition shadow-[0_0_24px_rgba(241,215,77,0.4)] hover:shadow-[0_0_36px_rgba(241,215,77,0.6)]">
+                Torna alla Home
+            </a>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#07090f] border-t border-white/10">
+        <div class="border-t border-white/10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row justify-between items-center gap-3">
+                <p class="text-gray-500 text-xs">&copy; 2026 N8 Marketing &mdash; Nicolò Balzani. Tutti i diritti riservati.</p>
+                <div class="flex items-center gap-5 text-xs text-gray-500">
+                    <a href="privacy-policy.html" class="hover:text-gray-300 transition">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/main.js"></script>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" style="display:none; position:fixed; bottom:0; left:0; right:0; z-index:9999; background:#1a1f2e; border-top:1px solid rgba(255,255,255,0.1); padding:16px 24px; box-shadow:0 -4px 24px rgba(0,0,0,0.4);">
+        <div style="max-width:1200px; margin:0 auto; display:flex; flex-wrap:wrap; align-items:center; gap:16px; justify-content:space-between;">
+            <p style="color:#e2e8f0; font-size:14px; margin:0; flex:1; min-width:220px; font-family:'Inter',sans-serif; line-height:1.6;">
+                Utilizziamo i cookie per migliorare la tua esperienza e per finalità di marketing. Puoi accettare o gestire le tue <a href="privacy-policy.html" style="color:#ffcc00; text-decoration:underline;">preferenze</a>.
+            </p>
+            <div style="display:flex; gap:12px; flex-shrink:0;">
+                <button id="cookie-reject" style="background:transparent; border:1px solid #6b7280; color:#ffffff; padding:9px 20px; border-radius:6px; font-size:14px; cursor:pointer; font-family:'Inter',sans-serif; transition:border-color 0.2s;">Rifiuta</button>
+                <button id="cookie-accept" style="background:#ffcc00; border:none; color:#000000; padding:9px 20px; border-radius:6px; font-size:14px; font-weight:600; cursor:pointer; font-family:'Inter',sans-serif; transition:opacity 0.2s;">Accetta</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        (function() {
+            var consent = localStorage.getItem('cookieConsent');
+            if (!consent) {
+                document.getElementById('cookie-banner').style.display = 'block';
+            }
+            document.getElementById('cookie-accept').addEventListener('click', function() {
+                localStorage.setItem('cookieConsent', 'accepted');
+                document.getElementById('cookie-banner').style.display = 'none';
+            });
+            document.getElementById('cookie-reject').addEventListener('click', function() {
+                localStorage.setItem('cookieConsent', 'rejected');
+                document.getElementById('cookie-banner').style.display = 'none';
+            });
+        })();
+    </script>
+</body>
+</html>
