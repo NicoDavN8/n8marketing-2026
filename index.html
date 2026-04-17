@@ -317,8 +317,10 @@
     </section>
     <script>
     (function () {
-        var SMSH_ENDPOINT = 'https://cloud.smshosting.it/sms/services/phoneBookAppFormFormRender.ic';
-        var SMSH_CODE     = 'qBGTYLtCd7uWhdKlbDWwTBJQbF1d0tuCSBnORAxCFv4ZWoWSX4PWn2sQ1qSGI1zL';
+        var AUTH_KEY    = 'SMSHX0FBXP79QBUYEIMHC';
+        var AUTH_SECRET = '1LPY120HRMVEPEGM4W9KYXUZF0UY58VD';
+        var FORM_CODE   = 'qBGTYLtCd7uWhdKlbDWwTBJQbF1d0tuCSBnORAxCFv4ZWoWSX4PWn2sQ1qSGI1zL';
+        var API_BASE    = 'https://api.smshosting.it/rest/api';
 
         var privacyBox = document.getElementById('smsh-privacy');
         var btn        = document.getElementById('smsh-submit');
@@ -331,25 +333,47 @@
             e.preventDefault();
             var nome      = document.getElementById('smsh-nome').value.trim();
             var email     = document.getElementById('smsh-email').value.trim();
-            var marketing = document.getElementById('smsh-marketing').checked ? '1' : '0';
+            var marketing = document.getElementById('smsh-marketing').checked;
             if (!nome || !email || !privacyBox.checked) return;
 
-            btn.disabled = true;
-            btn.textContent = 'Invio…';
+            btn.disabled     = true;
+            btn.textContent  = 'Invio…';
 
-            var body = new URLSearchParams();
-            body.append('app.appCode', SMSH_CODE);
-            body.append('Nome',              nome);
-            body.append('Email',             email);
-            body.append('privacy',           '1');
-            body.append('marketingConsent',  marketing);
+            var basicAuth = 'Basic ' + btoa(AUTH_KEY + ':' + AUTH_SECRET);
+            var payload   = JSON.stringify({
+                groupCode:         FORM_CODE,
+                firstName:         nome,
+                email:             email,
+                privacyConsent:    true,
+                marketingConsent:  marketing
+            });
 
-            fetch(SMSH_ENDPOINT, {
+            fetch(API_BASE + '/phonebook/group/subscriber/add', {
                 method:  'POST',
-                mode:    'no-cors',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body:    body.toString()
-            }).catch(function () {}).finally(function () {
+                mode:    'cors',
+                headers: {
+                    'Content-Type':  'application/json',
+                    'Authorization': basicAuth
+                },
+                body: payload
+            })
+            .catch(function () {
+                /* Fallback no-cors se CORS bloccato lato SMShosting */
+                var formBody = new URLSearchParams();
+                formBody.append('app.appCode',      FORM_CODE);
+                formBody.append('Nome',             nome);
+                formBody.append('Email',            email);
+                formBody.append('privacy',          '1');
+                formBody.append('marketingConsent', marketing ? '1' : '0');
+                return fetch(
+                    'https://cloud.smshosting.it/sms/services/phoneBookAppFormFormRender.ic',
+                    { method: 'POST', mode: 'no-cors',
+                      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                      body: formBody.toString() }
+                );
+            })
+            .catch(function () {})
+            .finally(function () {
                 setTimeout(function () {
                     window.location.href = 'grazie.html';
                 }, 500);
