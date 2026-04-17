@@ -398,5 +398,34 @@
     </style>
 
     <script src="assets/main.js"></script>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" style="display:none; position:fixed; bottom:0; left:0; right:0; z-index:9999; background:#1a1f2e; border-top:1px solid rgba(255,255,255,0.1); padding:16px 24px; box-shadow:0 -4px 24px rgba(0,0,0,0.4);">
+        <div style="max-width:1200px; margin:0 auto; display:flex; flex-wrap:wrap; align-items:center; gap:16px; justify-content:space-between;">
+            <p style="color:#e2e8f0; font-size:14px; margin:0; flex:1; min-width:220px; font-family:'Inter',sans-serif; line-height:1.6;">
+                Utilizziamo i cookie per migliorare la tua esperienza e per finalità di marketing. Puoi accettare o gestire le tue <a href="privacy-policy.html" style="color:#ffcc00; text-decoration:underline;">preferenze</a>.
+            </p>
+            <div style="display:flex; gap:12px; flex-shrink:0;">
+                <button id="cookie-reject" style="background:transparent; border:1px solid #6b7280; color:#ffffff; padding:9px 20px; border-radius:6px; font-size:14px; cursor:pointer; font-family:'Inter',sans-serif; transition:border-color 0.2s;">Rifiuta</button>
+                <button id="cookie-accept" style="background:#ffcc00; border:none; color:#000000; padding:9px 20px; border-radius:6px; font-size:14px; font-weight:600; cursor:pointer; font-family:'Inter',sans-serif; transition:opacity 0.2s;">Accetta</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        (function() {
+            var consent = localStorage.getItem('cookieConsent');
+            if (!consent) {
+                document.getElementById('cookie-banner').style.display = 'block';
+            }
+            document.getElementById('cookie-accept').addEventListener('click', function() {
+                localStorage.setItem('cookieConsent', 'accepted');
+                document.getElementById('cookie-banner').style.display = 'none';
+            });
+            document.getElementById('cookie-reject').addEventListener('click', function() {
+                localStorage.setItem('cookieConsent', 'rejected');
+                document.getElementById('cookie-banner').style.display = 'none';
+            });
+        })();
+    </script>
 </body>
 </html>
