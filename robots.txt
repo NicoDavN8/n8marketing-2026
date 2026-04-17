@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Non indicizzare pagine di conferma e legali
+Disallow: /grazie.html
+Disallow: /privacy-policy.html
+
+# Sitemap
+Sitemap: https://www.n8marketing.it/sitemap.xml
