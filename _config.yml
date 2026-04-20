@@ -1,0 +1,30 @@
+# Jekyll Configuration
+title: N8 Marketing AI
+description: Blog AI Marketing Valle d'Aosta - Consulenza e Formazione AI
+author: Nicolò Balzani
+email: n8@n8marketing.it
+url: https://www.n8marketing.it
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: post
+
+# Exclude files
+exclude:
+  - README.md
+  - Gemfile
+  - .gitignore

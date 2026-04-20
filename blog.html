@@ -175,93 +175,28 @@
             <div class="lg:w-2/3">
                 <div class="grid sm:grid-cols-2 gap-8">
 
-                    <!-- Article 1 -->
+                    {% for post in site.posts %}
                     <article class="bg-[#111316] border border-white/8 rounded-2xl overflow-hidden hover:border-[#f1d74d]/30 transition-all duration-300 group">
                         <div class="h-48 bg-gradient-to-br from-[#0d1f3c] to-[#0a1628] relative overflow-hidden flex items-center justify-center">
                             <svg class="w-16 h-16 text-[#4e81ee]/30 group-hover:text-[#4e81ee]/50 transition duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                             <div class="absolute bottom-3 left-4">
-                                <span class="text-xs font-bold uppercase tracking-wider text-[#4e81ee] bg-[#4e81ee]/10 border border-[#4e81ee]/20 px-2 py-1 rounded-full">Territorio &amp; AI</span>
+                                <span class="text-xs font-bold uppercase tracking-wider text-[#4e81ee] bg-[#4e81ee]/10 border border-[#4e81ee]/20 px-2 py-1 rounded-full">Blog &amp; AI</span>
                             </div>
                         </div>
                         <div class="p-6">
                             <h2 class="font-heading text-lg font-bold text-white mb-3 group-hover:text-[#f1d74d] transition leading-snug">
-                                <a href="#">Perché l'AI non sostituirà mai la conoscenza del territorio.</a>
+                                <a href="{{ post.url }}">{{ post.title }}</a>
                             </h2>
-                            <p class="text-gray-500 mb-5 text-sm leading-relaxed line-clamp-3">La tecnologia amplifica le capacità di chi la usa, ma non può replicare vent'anni di relazioni, di contesto e di comprensione profonda di un mercato locale.</p>
+                            <p class="text-gray-500 mb-5 text-sm leading-relaxed line-clamp-3">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
                             <div class="flex items-center justify-between pt-4 border-t border-white/5">
-                                <span class="text-xs text-gray-600">15 Aprile 2026</span>
-                                <a href="#" class="flex items-center gap-1.5 text-[#f1d74d] text-sm font-semibold hover:gap-3 transition-all duration-200">
+                                <span class="text-xs text-gray-600">{{ post.date | date: "%d/%m/%Y" }}</span>
+                                <a href="{{ post.url }}" class="flex items-center gap-1.5 text-[#f1d74d] text-sm font-semibold hover:gap-3 transition-all duration-200">
                                     <span class="text-[#f1d74d]">→</span> Leggi l'articolo
                                 </a>
                             </div>
                         </div>
                     </article>
-
-                    <!-- Article 2 -->
-                    <article class="bg-[#111316] border border-white/8 rounded-2xl overflow-hidden hover:border-[#f1d74d]/30 transition-all duration-300 group">
-                        <div class="h-48 bg-gradient-to-br from-[#1a1500] to-[#0f0d00] relative overflow-hidden flex items-center justify-center">
-                            <svg class="w-16 h-16 text-[#f1d74d]/20 group-hover:text-[#f1d74d]/40 transition duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            <div class="absolute bottom-3 left-4">
-                                <span class="text-xs font-bold uppercase tracking-wider text-[#f1d74d] bg-[#f1d74d]/10 border border-[#f1d74d]/20 px-2 py-1 rounded-full">Budget &amp; Dati</span>
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <h2 class="font-heading text-lg font-bold text-white mb-3 group-hover:text-[#f1d74d] transition leading-snug">
-                                <a href="#">Ottimizzazione del budget: come i dati proteggono il tuo investimento.</a>
-                            </h2>
-                            <p class="text-gray-500 mb-5 text-sm leading-relaxed line-clamp-3">Spendere di più non significa ottenere di più. Scopri come un approccio data-driven consente di ridurre gli sprechi e massimizzare il ritorno su ogni euro investito in comunicazione.</p>
-                            <div class="flex items-center justify-between pt-4 border-t border-white/5">
-                                <span class="text-xs text-gray-600">08 Aprile 2026</span>
-                                <a href="#" class="flex items-center gap-1.5 text-[#f1d74d] text-sm font-semibold hover:gap-3 transition-all duration-200">
-                                    <span class="text-[#f1d74d]">→</span> Leggi l'articolo
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Article 3 -->
-                    <article class="bg-[#111316] border border-white/8 rounded-2xl overflow-hidden hover:border-[#f1d74d]/30 transition-all duration-300 group">
-                        <div class="h-48 bg-gradient-to-br from-[#0f1a0f] to-[#080d08] relative overflow-hidden flex items-center justify-center">
-                            <svg class="w-16 h-16 text-[#4e81ee]/20 group-hover:text-[#4e81ee]/40 transition duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            <div class="absolute bottom-3 left-4">
-                                <span class="text-xs font-bold uppercase tracking-wider text-[#4e81ee] bg-[#4e81ee]/10 border border-[#4e81ee]/20 px-2 py-1 rounded-full">Prospettiva Storica</span>
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <h2 class="font-heading text-lg font-bold text-white mb-3 group-hover:text-[#f1d74d] transition leading-snug">
-                                <a href="#">L'evoluzione del Marketing in Valle d'Aosta: una prospettiva di 20 anni.</a>
-                            </h2>
-                            <p class="text-gray-500 mb-5 text-sm leading-relaxed line-clamp-3">Dal volantino stampato alle campagne programmatiche: come è cambiata la comunicazione d'impresa in un territorio di montagna e quali lezioni si possono applicare oggi con l'AI.</p>
-                            <div class="flex items-center justify-between pt-4 border-t border-white/5">
-                                <span class="text-xs text-gray-600">01 Aprile 2026</span>
-                                <a href="#" class="flex items-center gap-1.5 text-[#f1d74d] text-sm font-semibold hover:gap-3 transition-all duration-200">
-                                    <span class="text-[#f1d74d]">→</span> Leggi l'articolo
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Article 4 -->
-                    <article class="bg-[#111316] border border-white/8 rounded-2xl overflow-hidden hover:border-[#f1d74d]/30 transition-all duration-300 group">
-                        <div class="h-48 bg-gradient-to-br from-[#1a0d0d] to-[#0f0808] relative overflow-hidden flex items-center justify-center">
-                            <svg class="w-16 h-16 text-[#f1d74d]/20 group-hover:text-[#f1d74d]/40 transition duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
-                            <div class="absolute bottom-3 left-4">
-                                <span class="text-xs font-bold uppercase tracking-wider text-[#f1d74d] bg-[#f1d74d]/10 border border-[#f1d74d]/20 px-2 py-1 rounded-full">Automazione</span>
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <h2 class="font-heading text-lg font-bold text-white mb-3 group-hover:text-[#f1d74d] transition leading-snug">
-                                <a href="#">Automazione intelligente: quali processi delegare all'AI (e quali no).</a>
-                            </h2>
-                            <p class="text-gray-500 mb-5 text-sm leading-relaxed line-clamp-3">Non tutto può e deve essere automatizzato. Una guida pratica per identificare i processi ad alto spreco di tempo e quelli che richiedono invece la supervisione umana strategica.</p>
-                            <div class="flex items-center justify-between pt-4 border-t border-white/5">
-                                <span class="text-xs text-gray-600">24 Marzo 2026</span>
-                                <a href="#" class="flex items-center gap-1.5 text-[#f1d74d] text-sm font-semibold hover:gap-3 transition-all duration-200">
-                                    <span class="text-[#f1d74d]">→</span> Leggi l'articolo
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+                    {% endfor %}
 
                 </div>
 
