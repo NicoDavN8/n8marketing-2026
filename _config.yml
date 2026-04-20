@@ -3,7 +3,8 @@ title: N8 Marketing AI
 description: Blog AI Marketing Valle d'Aosta - Consulenza e Formazione AI
 author: Nicolò Balzani
 email: n8@n8marketing.it
-url: https://www.n8marketing.it
+url: https://nicodavn8.github.io/n8marketing-2026
+baseurl: /n8marketing-2026
 
 # Build settings
 markdown: kramdown

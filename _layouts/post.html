@@ -37,7 +37,7 @@ layout: null
             }
         }
     </script>
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
 </head>
 <body class="antialiased bg-[#07090f] text-gray-300">
 
@@ -46,8 +46,8 @@ layout: null
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="/index.html" class="flex items-center gap-4 font-heading tracking-tight">
-                        <img src="/assets/images/logo.png" alt="N8 Marketing AI - Consulenza e Formazione AI Marketing" class="h-16 w-auto">
+                    <a href="{{ site.baseurl }}/index.html" class="flex items-center gap-4 font-heading tracking-tight">
+                        <img src="{{ site.baseurl }}/assets/images/logo.png" alt="N8 Marketing AI - Consulenza e Formazione AI Marketing" class="h-16 w-auto">
                         <span class="flex items-center">
                             <span class="text-[#f1d74d] font-black text-3xl">N8</span>
                             <span class="text-[#4e81ee] font-medium text-2xl ml-1.5">Marketing</span>
@@ -56,9 +56,9 @@ layout: null
                     </a>
                 </div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="/index.html" class="text-[#4e81ee] hover:text-[#f1d74d] transition font-medium">Home</a>
-                    <a href="/chi-siamo.html" class="text-[#4e81ee] hover:text-[#f1d74d] transition font-medium">Chi Siamo</a>
-                    <a href="/blog.html" class="text-[#4e81ee] hover:text-[#f1d74d] font-semibold border-b-2 border-[#f1d74d] transition">Blog</a>
+                    <a href="{{ site.baseurl }}/index.html" class="text-[#4e81ee] hover:text-[#f1d74d] transition font-medium">Home</a>
+                    <a href="{{ site.baseurl }}/chi-siamo.html" class="text-[#4e81ee] hover:text-[#f1d74d] transition font-medium">Chi Siamo</a>
+                    <a href="{{ site.baseurl }}/blog.html" class="text-[#4e81ee] hover:text-[#f1d74d] font-semibold border-b-2 border-[#f1d74d] transition">Blog</a>
                 </div>
                 <div class="hidden md:flex">
                     <a href="/index.html#contatti" class="bg-[#f1d74d] text-black px-6 py-2.5 rounded-full font-semibold hover:bg-[#e0c644] transition shadow-lg shadow-[#f1d74d]/30">Contattaci!</a>
@@ -84,7 +84,7 @@ layout: null
             </div>
 
             <footer class="mt-16 pt-8 border-t border-white/10">
-                <a href="/blog.html" class="inline-flex items-center gap-1.5 text-[#f1d74d] font-semibold hover:gap-3 transition-all duration-200">
+                <a href="{{ site.baseurl }}/blog.html" class="inline-flex items-center gap-1.5 text-[#f1d74d] font-semibold hover:gap-3 transition-all duration-200">
                     <span>←</span> Torna al blog
                 </a>
             </footer>
@@ -96,8 +96,8 @@ layout: null
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
                 <div>
-                    <a href="/index.html" class="flex items-center gap-3 mb-4">
-                        <img src="/assets/images/logo.png" alt="N8 Marketing AI - Logo" class="h-10 w-auto">
+                    <a href="{{ site.baseurl }}/index.html" class="flex items-center gap-3 mb-4">
+                        <img src="{{ site.baseurl }}/assets/images/logo.png" alt="N8 Marketing AI - Logo" class="h-10 w-auto">
                         <span class="font-heading font-bold text-xl flex items-center gap-1.5">
                             <span class="text-[#f1d74d] font-black">N8</span>
                             <span class="text-[#4e81ee] font-medium">Marketing</span>
@@ -124,10 +124,10 @@ layout: null
                 <div>
                     <h4 class="text-white font-heading font-bold text-lg mb-4">Navigazione</h4>
                     <div class="space-y-2 text-sm text-gray-400">
-                        <a href="/index.html" class="block hover:text-brand-yellow transition">Home</a>
-                        <a href="/chi-siamo.html" class="block hover:text-brand-yellow transition">Chi Siamo</a>
-                        <a href="/blog.html" class="block hover:text-brand-yellow transition">Blog</a>
-                        <a href="/index.html#contatti" class="block hover:text-brand-yellow transition font-medium text-[#f1d74d]">Contattaci</a>
+                        <a href="{{ site.baseurl }}/index.html" class="block hover:text-brand-yellow transition">Home</a>
+                        <a href="{{ site.baseurl }}/chi-siamo.html" class="block hover:text-brand-yellow transition">Chi Siamo</a>
+                        <a href="{{ site.baseurl }}/blog.html" class="block hover:text-brand-yellow transition">Blog</a>
+                        <a href="{{ site.baseurl }}/index.html#contatti" class="block hover:text-brand-yellow transition font-medium text-[#f1d74d]">Contattaci</a>
                     </div>
                 </div>
 
@@ -147,12 +147,12 @@ layout: null
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex justify-between items-center gap-3">
                 <p class="text-gray-500 text-xs">&copy; 2026 N8 Marketing &mdash; Nicolò Balzani. Tutti i diritti riservati.</p>
                 <div class="flex items-center gap-5 text-xs text-gray-500">
-                    <a href="/privacy-policy.html" class="hover:text-gray-300 transition">Privacy Policy</a>
+                    <a href="{{ site.baseurl }}/privacy-policy.html" class="hover:text-gray-300 transition">Privacy Policy</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="/assets/main.js"></script>
+    <script src="{{ site.baseurl }}/assets/main.js"></script>
 </body>
 </html>

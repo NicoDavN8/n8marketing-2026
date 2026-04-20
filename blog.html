@@ -108,7 +108,7 @@ permalink: /blog.html
             }
         }
     </script>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
 </head>
 <body class="antialiased bg-[#07090f] text-gray-300">
 
@@ -117,8 +117,8 @@ permalink: /blog.html
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="index.html" class="flex items-center gap-4 font-heading tracking-tight">
-                        <img src="assets/images/logo.png" alt="N8 Marketing AI - Consulenza e Formazione AI Marketing" class="h-16 w-auto">
+                    <a href="{{ site.baseurl }}/index.html" class="flex items-center gap-4 font-heading tracking-tight">
+                        <img src="{{ site.baseurl }}/assets/images/logo.png" alt="N8 Marketing AI - Consulenza e Formazione AI Marketing" class="h-16 w-auto">
                         <span class="flex items-center">
                             <span class="text-[#f1d74d] font-black text-3xl">N8</span>
                             <span class="text-[#4e81ee] font-medium text-2xl ml-1.5">Marketing</span>
@@ -127,12 +127,12 @@ permalink: /blog.html
                     </a>
                 </div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-[#4e81ee] hover:text-[#f1d74d] transition font-medium">Home</a>
-                    <a href="chi-siamo.html" class="text-[#4e81ee] hover:text-[#f1d74d] transition font-medium">Chi Siamo</a>
-                    <a href="blog.html" class="text-[#4e81ee] hover:text-[#f1d74d] font-semibold border-b-2 border-[#f1d74d] transition">Blog</a>
+                    <a href="{{ site.baseurl }}/index.html" class="text-[#4e81ee] hover:text-[#f1d74d] transition font-medium">Home</a>
+                    <a href="{{ site.baseurl }}/chi-siamo.html" class="text-[#4e81ee] hover:text-[#f1d74d] transition font-medium">Chi Siamo</a>
+                    <a href="{{ site.baseurl }}/blog.html" class="text-[#4e81ee] hover:text-[#f1d74d] font-semibold border-b-2 border-[#f1d74d] transition">Blog</a>
                 </div>
                 <div class="hidden md:flex">
-                    <a href="index.html#contatti" class="bg-[#f1d74d] text-black px-6 py-2.5 rounded-full font-semibold hover:bg-[#e0c644] transition shadow-lg shadow-[#f1d74d]/30">Contattaci!</a>
+                    <a href="{{ site.baseurl }}/index.html#contatti" class="bg-[#f1d74d] text-black px-6 py-2.5 rounded-full font-semibold hover:bg-[#e0c644] transition shadow-lg shadow-[#f1d74d]/30">Contattaci!</a>
                 </div>
                 <div class="md:hidden flex items-center">
                     <button id="mobile-menu-btn" class="text-white hover:text-[#f1d74d] focus:outline-none transition">
@@ -146,12 +146,12 @@ permalink: /blog.html
         <!-- Mobile menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-black border-b border-[#4e81ee] shadow-xl">
             <div class="px-2 pt-2 pb-2 space-y-1 sm:px-3">
-                <a href="index.html" class="block px-3 py-2 text-[#4e81ee] hover:text-[#f1d74d] hover:bg-white/5 rounded-md font-medium transition">Home</a>
-                <a href="chi-siamo.html" class="block px-3 py-2 text-[#4e81ee] hover:text-[#f1d74d] hover:bg-white/5 rounded-md font-medium transition">Chi Siamo</a>
-                <a href="blog.html" class="block px-3 py-2 text-[#4e81ee] font-semibold bg-white/10 rounded-md">Blog</a>
+                <a href="{{ site.baseurl }}/index.html" class="block px-3 py-2 text-[#4e81ee] hover:text-[#f1d74d] hover:bg-white/5 rounded-md font-medium transition">Home</a>
+                <a href="{{ site.baseurl }}/chi-siamo.html" class="block px-3 py-2 text-[#4e81ee] hover:text-[#f1d74d] hover:bg-white/5 rounded-md font-medium transition">Chi Siamo</a>
+                <a href="{{ site.baseurl }}/blog.html" class="block px-3 py-2 text-[#4e81ee] font-semibold bg-white/10 rounded-md">Blog</a>
             </div>
             <div class="px-4 pb-4 pt-1">
-                <a href="index.html#contatti" class="block w-full text-center px-6 py-3 bg-[#f1d74d] text-black font-bold rounded-full hover:bg-[#e0c644] transition shadow-md shadow-[#f1d74d]/30">Contattaci!</a>
+                <a href="{{ site.baseurl }}/index.html#contatti" class="block w-full text-center px-6 py-3 bg-[#f1d74d] text-black font-bold rounded-full hover:bg-[#e0c644] transition shadow-md shadow-[#f1d74d]/30">Contattaci!</a>
             </div>
         </div>
     </header>
@@ -189,12 +189,12 @@ permalink: /blog.html
                         </div>
                         <div class="p-6">
                             <h2 class="font-heading text-lg font-bold text-white mb-3 group-hover:text-[#f1d74d] transition leading-snug">
-                                <a href="{{ post.url }}">{{ post.title }}</a>
+                                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                             </h2>
                             <p class="text-gray-500 mb-5 text-sm leading-relaxed line-clamp-3">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
                             <div class="flex items-center justify-between pt-4 border-t border-white/5">
                                 <span class="text-xs text-gray-600">{{ post.date | date: "%d/%m/%Y" }}</span>
-                                <a href="{{ post.url }}" class="flex items-center gap-1.5 text-[#f1d74d] text-sm font-semibold hover:gap-3 transition-all duration-200">
+                                <a href="{{ post.url | prepend: site.baseurl }}" class="flex items-center gap-1.5 text-[#f1d74d] text-sm font-semibold hover:gap-3 transition-all duration-200">
                                     <span class="text-[#f1d74d]">→</span> Leggi l'articolo
                                 </a>
                             </div>
@@ -368,8 +368,8 @@ permalink: /blog.html
 
                 <!-- Col 1: Brand + social -->
                 <div>
-                    <a href="index.html" class="flex items-center gap-3 mb-4">
-                        <img src="assets/images/logo.png" alt="N8 Marketing AI - Logo" class="h-10 w-auto">
+                    <a href="{{ site.baseurl }}/index.html" class="flex items-center gap-3 mb-4">
+                        <img src="{{ site.baseurl }}/assets/images/logo.png" alt="N8 Marketing AI - Logo" class="h-10 w-auto">
                         <span class="font-heading font-bold text-xl flex items-center gap-1.5">
                             <span class="text-[#f1d74d] font-black">N8</span>
                             <span class="text-[#4e81ee] font-medium">Marketing</span>
@@ -432,11 +432,11 @@ permalink: /blog.html
                 <div>
                     <h4 class="footer-col-title">Navigazione</h4>
                     <div class="space-y-2 text-sm text-gray-400">
-                        <a href="index.html" class="block hover:text-brand-yellow transition">Home</a>
-                        <a href="index.html#servizi" class="block hover:text-brand-yellow transition">Servizi</a>
-                        <a href="chi-siamo.html" class="block hover:text-brand-yellow transition">Chi Siamo</a>
-                        <a href="blog.html" class="block hover:text-brand-yellow transition">Blog</a>
-                        <a href="index.html#contatti" class="block hover:text-brand-yellow transition font-medium text-[#f1d74d]">Contattaci</a>
+                        <a href="{{ site.baseurl }}/index.html" class="block hover:text-brand-yellow transition">Home</a>
+                        <a href="{{ site.baseurl }}/index.html#servizi" class="block hover:text-brand-yellow transition">Servizi</a>
+                        <a href="{{ site.baseurl }}/chi-siamo.html" class="block hover:text-brand-yellow transition">Chi Siamo</a>
+                        <a href="{{ site.baseurl }}/blog.html" class="block hover:text-brand-yellow transition">Blog</a>
+                        <a href="{{ site.baseurl }}/index.html#contatti" class="block hover:text-brand-yellow transition font-medium text-[#f1d74d]">Contattaci</a>
                     </div>
                 </div>
 
@@ -448,7 +448,7 @@ permalink: /blog.html
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row justify-between items-center gap-3">
                 <p class="text-gray-500 text-xs">&copy; 2026 N8 Marketing &mdash; Nicolò Balzani. Tutti i diritti riservati.</p>
                 <div class="flex items-center gap-5 text-xs text-gray-500">
-                    <a href="privacy-policy.html" class="hover:text-gray-300 transition">Privacy Policy</a>
+                    <a href="{{ site.baseurl }}/privacy-policy.html" class="hover:text-gray-300 transition">Privacy Policy</a>
                     <span class="text-white/10">|</span>
                     <a href="#" class="hover:text-gray-300 transition">Cookies</a>
                 </div>
@@ -457,13 +457,13 @@ permalink: /blog.html
 
     </footer>
 
-    <script src="assets/main.js"></script>
+    <script src="{{ site.baseurl }}/assets/main.js"></script>
 
     <!-- Cookie Banner -->
     <div id="cookie-banner" style="display:none; position:fixed; bottom:0; left:0; right:0; z-index:9999; background:#1a1f2e; border-top:1px solid rgba(255,255,255,0.1); padding:16px 24px; box-shadow:0 -4px 24px rgba(0,0,0,0.4);">
         <div style="max-width:1200px; margin:0 auto; display:flex; flex-wrap:wrap; align-items:center; gap:16px; justify-content:space-between;">
             <p style="color:#e2e8f0; font-size:14px; margin:0; flex:1; min-width:220px; font-family:'Inter',sans-serif; line-height:1.6;">
-                Utilizziamo i cookie per migliorare la tua esperienza e per finalità di marketing. Puoi accettare o gestire le tue <a href="privacy-policy.html" style="color:#ffcc00; text-decoration:underline;">preferenze</a>.
+                Utilizziamo i cookie per migliorare la tua esperienza e per finalità di marketing. Puoi accettare o gestire le tue <a href="{{ site.baseurl }}/privacy-policy.html" style="color:#ffcc00; text-decoration:underline;">preferenze</a>.
             </p>
             <div style="display:flex; gap:12px; flex-shrink:0;">
                 <button id="cookie-reject" style="background:transparent; border:1px solid #6b7280; color:#ffffff; padding:9px 20px; border-radius:6px; font-size:14px; cursor:pointer; font-family:'Inter',sans-serif;">Rifiuta</button>
