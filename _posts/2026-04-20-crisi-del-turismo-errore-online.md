@@ -34,5 +34,7 @@ In secondo luogo, tra le parole più digitate su Google da papabili utenti della
 Un bombardamento d’informazioni che inevitabilmente **condizionano le scelte di acquisto di una vacanza** ad un costo proporzionalmente nettamente inferiore alle campagne TV.
 
 ---
-#### Inizia il tuo percorso AI Marketing!
-<script type="text/javascript" src="https://form.jotform.com/jsform/261063490141044"></script>
+
+<div style=’text-align: center; margin: 40px 0;’>
+<a href=’/contatti’ style=’background-color: #000; color: #fff; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold;’>Contattaci!</a>
+</div>

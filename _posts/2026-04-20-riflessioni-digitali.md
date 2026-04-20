@@ -30,5 +30,7 @@ Tutti questi fattori sono importanti ma, con le giuste proporzioni Valle d’Aos
 PS: il cliente non utilizza **nessun social media,** basando la sua strategia di marketing sulla SEO e Google ADS.
 
 ---
-#### Inizia il tuo percorso AI Marketing!
-<script type="text/javascript" src="https://form.jotform.com/jsform/261063490141044"></script>
+
+<div style='text-align: center; margin: 40px 0;'>
+<a href='/contatti' style='background-color: #000; color: #fff; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold;'>Contattaci!</a>
+</div>

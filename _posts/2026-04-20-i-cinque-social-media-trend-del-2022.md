@@ -47,8 +47,10 @@ Uno **spazio virtuale** dove mostrare chi sei e quello che fai, sia che tu sia u
 **5. Community**
 Il proprio gruppo di fans, follower e amici concentrati in un luogo virtuale dove si parla, discute e si interagisce questo è l’obiettivo per rendere i social veramente utili ai tuoi interessi. Un po’ come **un orto**, più ce ne si prende cura più il raccolto sarà prezioso. Quindi, **cosa fare?** Creare contenuti utili e sempre aggiornati. **Ci vuole del tempo?** Sicuramente sì, come per tutte le cose in cui si vuole ottenere risultati.
 
-Il segreto per un’identità social dei tuoi profili sarà **un mix di tutti questi 5 aspetti equamente curati**, ricordando sempre di seguire queste rubrica perché nel mondo digitale si dice: **“Quello che è valido oggi non lo sarà più tra sei mesi”**…soprattutto per i social media.
+Il segreto per un’identità social dei tuoi profili sarà **un mix di tutti questi 5 aspetti equamente curati**, ricordando sempre di seguire queste rubrica perché nel mondo digitale si dice: **”Quello che è valido oggi non lo sarà più tra sei mesi”**…soprattutto per i social media.
 
 ---
-#### Inizia il tuo percorso Marketing AI!
-<script type="text/javascript" src="https://form.jotform.com/jsform/261063490141044"></script>
+
+<div style=’text-align: center; margin: 40px 0;’>
+<a href=’/contatti’ style=’background-color: #000; color: #fff; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold;’>Contattaci!</a>
+</div>
