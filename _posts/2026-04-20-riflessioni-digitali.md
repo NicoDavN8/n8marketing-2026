@@ -4,7 +4,7 @@ title: "Riflessioni di un Marketing Manager Valdostano"
 date: 2026-04-20
 ---
 
-![Riflessioni Digitali in Valle D'Aosta](/assets/img/riflessioni-digitali.webp)
+![Riflessioni Digitali in Valle D'Aosta](/assets/images/riflessioni-digitali.webp)
 
 #### Come titolo fa un po’ ridere ma, in fondo, questo è il mio lavoro e questa la fantastica regione dove ho scelto di vivere. 
 

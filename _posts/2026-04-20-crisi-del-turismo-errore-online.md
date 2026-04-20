@@ -4,7 +4,7 @@ title: "Crisi del turismo: L’errore è anche online!"
 date: 2026-04-20
 ---
 
-![crisi del turismo invernale](/assets/img/crisi-del-turismo.webp)
+![crisi del turismo invernale](/assets/images/crisi-del-turismo.webp)
 
 #### Piste e alberghi semi vuoti? La colpa è del virus ma, anche, di una programmazione turistica incapace di sfruttare le risorse del web. Oggi, nel primo di tre approfondimenti settimanali previsti sul tema, ci dedichiamo in particolare ai motori di ricerca e ai portali di settore.
 
@@ -24,11 +24,11 @@ Oggi, nel primo di tre approfondimenti settimanali previsti sul tema, ci dedichi
 
 In primo luogo, da una normale **ricerca su Google** riguardante una qualsiasi località turistica della regione, è facile imbattersi in numerosi siti di settore (nel dettaglio, abbiamo analizzato i primi due risultati, su doesciare.it e skiresort.it) che al loro interno contengono banner dedicati ad inserzionisti che **pubblicizzano località concorrenti**, ahinoi soprattutto del **Trentino** (vedi foto allegato).
 
-![Analisi siti concorrenti](/assets/img/analisi-siti-concorrenti.webp)
+![Analisi siti concorrenti](/assets/images/analisi-siti-concorrenti.webp)
 
 In secondo luogo, tra le parole più digitate su Google da papabili utenti della montagna ci sono termini come: “vacanze montagna”, “**vacanza in montagna**”, “last minute montagna”, ognuna di esse è ricercata giornalmente centinai di volte. Migliaia di potenziali clienti a target che, come prime voci nella prima pagina di Google, si troveranno schermate colme di **annunci pubblicitari legati a località del Trentino Alto Adige** (vedi foto allegato).
 
-![Ricerca Google vacanze montagna](/assets/img/ricerca-google-vacanze.webp)
+![Ricerca Google vacanze montagna](/assets/images/ricerca-google-vacanze.webp)
 
 Un bombardamento d’informazioni che inevitabilmente **condizionano le scelte di acquisto di una vacanza** ad un costo proporzionalmente nettamente inferiore alle campagne TV.
 
