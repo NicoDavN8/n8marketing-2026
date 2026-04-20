@@ -89,9 +89,7 @@ layout: null
                 {{ content }}
             </div>
 
-            <div style="text-align: center; margin: 40px 0;">
-              <a href="/contatti" style="background-color: #000; color: #fff; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block;">Contattaci!</a>
-            </div>
+            {% include contact-form.html %}
 
             <footer class="mt-16 pt-8 border-t border-white/10">
                 <a href="{{ site.baseurl }}/blog.html" class="inline-flex items-center gap-1.5 text-[#f1d74d] font-semibold hover:gap-3 transition-all duration-200">

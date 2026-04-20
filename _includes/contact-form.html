@@ -1,0 +1,72 @@
+<!-- Contact Form Section — JotForm POST custom design -->
+<style>
+    .jf-check { display:none; }
+    .jf-check + span {
+        display:inline-flex; align-items:center; justify-content:center;
+        width:16px; height:16px; min-width:16px;
+        border:1.5px solid #4b5563; border-radius:3px;
+        background:#111827; cursor:pointer; transition:border-color .2s;
+    }
+    .jf-check:checked + span { border-color:#f1d74d; }
+    .jf-check:checked + span::after {
+        content:''; display:block; width:9px; height:5px;
+        border-left:2px solid #f1d74d; border-bottom:2px solid #f1d74d;
+        transform:rotate(-45deg) translateY(-1px);
+    }
+    #jf-submit:disabled { opacity:.45; cursor:not-allowed; box-shadow:none; }
+</style>
+
+<section id="contatti" class="py-8 bg-gradient-to-b from-black to-[#0a0a0a] border-y-[5px] border-solid border-[#f1d74d] shadow-[0_0_40px_rgba(241,215,77,0.15)] relative z-10 mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row items-start gap-5 lg:gap-8 justify-between fade-in-up">
+
+            <h2 class="font-heading text-xl lg:text-2xl font-bold text-[#4e81ee] shrink-0 whitespace-nowrap pt-2">Scrivici, siamo qui per te!</h2>
+
+            <iframe name="jf_hidden" style="display:none;" aria-hidden="true"></iframe>
+
+            <form method="POST"
+                  action="https://submit.jotform.com/submit/261063490141044"
+                  target="jf_hidden"
+                  onsubmit="setTimeout(function(){ window.location.href='{{ site.baseurl }}/grazie.html'; }, 1500);"
+                  class="flex flex-col gap-2 w-full flex-grow">
+
+                <input type="hidden" name="formID" value="261063490141044">
+
+                <!-- Unica riga: Nome · Cognome · Email · Invia! -->
+                <div class="flex flex-col md:flex-row gap-3 items-stretch md:items-center">
+                    <input type="text"  name="q5_nome[first]" required placeholder="Nome"
+                           class="flex-1 min-w-0 px-4 py-2.5 bg-white/15 border-none text-[#4e81ee] placeholder-[#4e81ee] focus:ring-2 focus:outline-none focus:ring-[#4e81ee] transition rounded-full text-sm shadow-inner backdrop-blur-md">
+                    <input type="text"  name="q5_nome[last]"  required placeholder="Cognome"
+                           class="flex-1 min-w-0 px-4 py-2.5 bg-white/15 border-none text-[#4e81ee] placeholder-[#4e81ee] focus:ring-2 focus:outline-none focus:ring-[#4e81ee] transition rounded-full text-sm shadow-inner backdrop-blur-md">
+                    <input type="email" name="q6_email"        required placeholder="Email"
+                           class="flex-[1.4] min-w-0 px-4 py-2.5 bg-white/15 border-none text-[#4e81ee] placeholder-[#4e81ee] focus:ring-2 focus:outline-none focus:ring-[#4e81ee] transition rounded-full text-sm shadow-inner backdrop-blur-md">
+                    <button type="submit" id="jf-submit" disabled
+                            class="shrink-0 px-8 py-2.5 rounded-full bg-[#f1d74d] text-black font-bold text-sm hover:bg-yellow-400 transition whitespace-nowrap shadow-[0_0_16px_rgba(241,215,77,0.5)] hover:shadow-[0_0_28px_rgba(241,215,77,0.7)]">
+                        Invia!
+                    </button>
+                </div>
+
+                <!-- GDPR — sotto la riga, testo piccolo -->
+                <div class="flex flex-col sm:flex-row gap-x-5 gap-y-1.5 pt-1">
+                    <label class="flex items-center gap-1.5 cursor-pointer">
+                        <input type="checkbox" id="jf-privacy" name="q7_privacy" value="1" class="jf-check" required>
+                        <span></span>
+                        <span class="text-gray-500 text-[11px] leading-tight">Accetto la <a href="{{ site.baseurl }}/privacy-policy.html" class="text-[#f1d74d] hover:underline" target="_blank">Privacy Policy</a> <span class="text-gray-600">(obbligatorio)</span></span>
+                    </label>
+                    <label class="flex items-center gap-1.5 cursor-pointer">
+                        <input type="checkbox" name="q8_marketing" value="1" class="jf-check">
+                        <span></span>
+                        <span class="text-gray-500 text-[11px] leading-tight">Acconsento al marketing <span class="text-gray-600">(opzionale)</span></span>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<script>
+(function () {
+    var cb  = document.getElementById('jf-privacy');
+    var btn = document.getElementById('jf-submit');
+    cb.addEventListener('change', function () { btn.disabled = !cb.checked; });
+})();
+</script>
