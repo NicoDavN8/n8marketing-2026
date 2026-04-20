@@ -1,0 +1,158 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | N8 Marketing AI - Blog</title>
+    <meta name="description" content="{{ page.excerpt | strip_html | truncatewords: 20 }}">
+    <link rel="canonical" href="https://www.n8marketing.it{{ page.url }}">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind Settings -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#0F172A',
+                            yellow: '#FACC15',
+                            tech: '#3B82F6',
+                            light: '#F8FAFC'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body class="antialiased bg-[#07090f] text-gray-300">
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 bg-black/90 backdrop-blur-md border-b border-[#4e81ee] shadow-2xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="/index.html" class="flex items-center gap-4 font-heading tracking-tight">
+                        <img src="/assets/images/logo.png" alt="N8 Marketing AI - Consulenza e Formazione AI Marketing" class="h-16 w-auto">
+                        <span class="flex items-center">
+                            <span class="text-[#f1d74d] font-black text-3xl">N8</span>
+                            <span class="text-[#4e81ee] font-medium text-2xl ml-1.5">Marketing</span>
+                            <span class="text-[#4e81ee] border border-[#4e81ee] px-1.5 py-0.5 rounded text-[0.65rem] font-bold tracking-widest ml-2 bg-[#4e81ee]/10">AI</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="/index.html" class="text-[#4e81ee] hover:text-[#f1d74d] transition font-medium">Home</a>
+                    <a href="/chi-siamo.html" class="text-[#4e81ee] hover:text-[#f1d74d] transition font-medium">Chi Siamo</a>
+                    <a href="/blog.html" class="text-[#4e81ee] hover:text-[#f1d74d] font-semibold border-b-2 border-[#f1d74d] transition">Blog</a>
+                </div>
+                <div class="hidden md:flex">
+                    <a href="/index.html#contatti" class="bg-[#f1d74d] text-black px-6 py-2.5 rounded-full font-semibold hover:bg-[#e0c644] transition shadow-lg shadow-[#f1d74d]/30">Contattaci!</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <main class="pt-40 pb-20 bg-[#07090f]">
+        <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <header class="mb-8">
+                <h1 class="font-heading text-4xl md:text-5xl font-bold text-white mb-4">{{ page.title }}</h1>
+                <div class="flex items-center gap-4 text-gray-400 text-sm">
+                    <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%d %B %Y" }}</time>
+                    <span class="text-gray-600">•</span>
+                    <span>Nicolò Balzani</span>
+                </div>
+            </header>
+
+            <div class="prose prose-invert max-w-none">
+                {{ content }}
+            </div>
+
+            <footer class="mt-16 pt-8 border-t border-white/10">
+                <a href="/blog.html" class="inline-flex items-center gap-1.5 text-[#f1d74d] font-semibold hover:gap-3 transition-all duration-200">
+                    <span>←</span> Torna al blog
+                </a>
+            </footer>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#07090f] border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div>
+                    <a href="/index.html" class="flex items-center gap-3 mb-4">
+                        <img src="/assets/images/logo.png" alt="N8 Marketing AI - Logo" class="h-10 w-auto">
+                        <span class="font-heading font-bold text-xl flex items-center gap-1.5">
+                            <span class="text-[#f1d74d] font-black">N8</span>
+                            <span class="text-[#4e81ee] font-medium">Marketing</span>
+                            <span class="text-[#4e81ee] border border-[#4e81ee] px-1 py-0.5 rounded text-[0.55rem] font-bold tracking-widest bg-[#4e81ee]/10">AI</span>
+                        </span>
+                    </a>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-5">Marketing Strategico &amp; AI per il territorio</p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-heading font-bold text-lg mb-4">Contatti</h4>
+                    <div class="space-y-2 text-sm text-gray-400">
+                        <div>
+                            <span class="text-gray-500 text-xs uppercase tracking-wide block mb-0.5">Tel</span>
+                            <a href="tel:+393336771270" class="hover:text-brand-yellow transition">+39 333 67 71 270</a>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 text-xs uppercase tracking-wide block mb-0.5">Email</span>
+                            <a href="mailto:n8@n8marketing.it" class="hover:text-brand-yellow transition">n8@n8marketing.it</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-heading font-bold text-lg mb-4">Navigazione</h4>
+                    <div class="space-y-2 text-sm text-gray-400">
+                        <a href="/index.html" class="block hover:text-brand-yellow transition">Home</a>
+                        <a href="/chi-siamo.html" class="block hover:text-brand-yellow transition">Chi Siamo</a>
+                        <a href="/blog.html" class="block hover:text-brand-yellow transition">Blog</a>
+                        <a href="/index.html#contatti" class="block hover:text-brand-yellow transition font-medium text-[#f1d74d]">Contattaci</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-heading font-bold text-lg mb-4">Dove siamo</h4>
+                    <div class="space-y-3 text-sm text-gray-400 leading-relaxed">
+                        <div>
+                            <span class="text-gray-200 font-medium block mb-0.5">Sede Operativa</span>
+                            Frazione Cheriettes, 70<br>11010 Aymavilles (AO)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-white/10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex justify-between items-center gap-3">
+                <p class="text-gray-500 text-xs">&copy; 2026 N8 Marketing &mdash; Nicolò Balzani. Tutti i diritti riservati.</p>
+                <div class="flex items-center gap-5 text-xs text-gray-500">
+                    <a href="/privacy-policy.html" class="hover:text-gray-300 transition">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/main.js"></script>
+</body>
+</html>
