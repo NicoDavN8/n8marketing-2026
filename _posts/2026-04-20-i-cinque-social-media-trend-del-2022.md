@@ -2,6 +2,7 @@
 layout: post
 title: "I cinque social media trend del 2022"
 date: 2026-04-20
+image: /assets/images/incontro-di-box.webp
 ---
 
 ![Social media trend](/assets/images/incontro-di-box.webp)

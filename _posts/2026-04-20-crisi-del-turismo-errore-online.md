@@ -2,6 +2,7 @@
 layout: post
 title: "Crisi del turismo: L’errore è anche online!"
 date: 2026-04-20
+image: /assets/images/crisi-del-turismo.webp
 ---
 
 ![crisi del turismo invernale](/assets/images/crisi-del-turismo.webp)
