@@ -28,9 +28,3 @@ Certo, non è tutto oro quello che luccica, ci sono alcune **prerogative necessa
 Tutti questi fattori sono importanti ma, con le giuste proporzioni Valle d’Aosta vs. Italia, come mai così pochi credono in Google? Un **enigma digital turistico** tipico valdostano, a cui non crediate che non abbia provato a risolvere ma la risposta “non c’è budget” è stata quella più gettonata! 
 
 PS: il cliente non utilizza **nessun social media,** basando la sua strategia di marketing sulla SEO e Google ADS.
-
----
-
-<div style='text-align: center; margin: 40px 0;'>
-<a href='/contatti' style='background-color: #000; color: #fff; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold;'>Contattaci!</a>
-</div>

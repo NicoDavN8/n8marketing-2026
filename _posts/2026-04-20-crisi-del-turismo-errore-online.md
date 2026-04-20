@@ -32,9 +32,3 @@ In secondo luogo, tra le parole più digitate su Google da papabili utenti della
 ![Ricerca Google vacanze montagna](/assets/images/ricerca-google-vacanze.webp)
 
 Un bombardamento d’informazioni che inevitabilmente **condizionano le scelte di acquisto di una vacanza** ad un costo proporzionalmente nettamente inferiore alle campagne TV.
-
----
-
-<div style=’text-align: center; margin: 40px 0;’>
-<a href=’/contatti’ style=’background-color: #000; color: #fff; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold;’>Contattaci!</a>
-</div>
