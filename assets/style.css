@@ -174,7 +174,6 @@ h1, h2, h3, h4, h5, h6 {
 /* ── Hover: card diventa scura con glow azzurro ── */
 .expertise-card:hover {
   background: linear-gradient(135deg, #0F172A 0%, #1e293b 100%);
-  transform: translateY(-6px);
   box-shadow:
     0 0 0 2px #4e81ee,
     0 0 28px rgba(78, 129, 238, 0.5),
