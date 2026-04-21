@@ -5,7 +5,7 @@ date: 2026-04-20
 image: /assets/images/Riflessioni-Digitali.webp
 ---
 
-![Riflessioni Digitali in Valle D'Aosta](/assets/images/riflessioni-digitali.webp)
+![Riflessioni Digitali in Valle D'Aosta](/assets/images/Riflessioni-Digitali.webp)
 
 #### Come titolo fa un po’ ridere ma, in fondo, questo è il mio lavoro e questa la fantastica regione dove ho scelto di vivere. 
 
