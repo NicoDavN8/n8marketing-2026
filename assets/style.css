@@ -301,11 +301,13 @@ h1, h2, h3, h4, h5, h6 {
 .testi-carousel-wrapper {
   position: relative;
   padding-bottom: 3rem;
+  overflow: visible;
 }
 
 .testi-carousel {
   display: flex;
   overflow-x: auto;
+  overflow-y: visible;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   gap: 1.5rem;
