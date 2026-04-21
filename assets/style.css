@@ -382,3 +382,38 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 0.5rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
+
+/* =============================================
+   Partner Logos — Minimalist Watermark Style
+   ============================================= */
+
+.partners-scroll {
+  display: flex;
+  gap: 3rem;
+  animation: partnersScroll 18s linear infinite;
+  will-change: transform;
+}
+
+@keyframes partnersScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.partners-scroll:hover {
+  animation-play-state: paused;
+}
+
+.partner-logo {
+  flex: 0 0 auto;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: grayscale(100%);
+  opacity: 0.45;
+  transition: opacity 0.3s ease;
+}
