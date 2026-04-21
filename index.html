@@ -676,60 +676,51 @@
         </div>
     </section>
 
-    <!-- Partner Marquee Section -->
+    <!-- Partner Marquee Section (Dynamic) -->
     <section id="partner-marquee" class="bg-white border-t border-gray-100 py-4 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="overflow-hidden">
-                <div class="partners-scroll">
-                    <!-- First Set of Logos -->
-                    <div class="partner-logo">
-                        <img src="assets/loghi/emsy_logo_grigio.png" alt="EMSY Partner" class="h-9 sm:h-10 w-auto">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="assets/loghi/New Logo_grosjean.png" alt="Grosjean Partner" class="h-9 sm:h-10 w-auto">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="assets/loghi/Valle d'Aosta_Confcommercio_logo_nero.png" alt="Confcommercio Partner" class="h-9 sm:h-10 w-auto">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="assets/loghi/logo_consorzio_vda.png" alt="Consorzio VDA Partner" class="h-9 sm:h-10 w-auto">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="assets/loghi/TORREANO-Logo.png" alt="Torreano Partner" class="h-9 sm:h-10 w-auto">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="assets/loghi/Les Montagnards Logo 3S.png" alt="Les Montagnards Partner" class="h-9 sm:h-10 w-auto">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="assets/loghi/LO CROTTEN LOGO_sfondo bianco.png" alt="Lo Crotten Partner" class="h-9 sm:h-10 w-auto">
-                    </div>
-
-                    <!-- Duplicate Set for Seamless Loop -->
-                    <div class="partner-logo">
-                        <img src="assets/loghi/emsy_logo_grigio.png" alt="EMSY Partner" class="h-9 sm:h-10 w-auto">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="assets/loghi/New Logo_grosjean.png" alt="Grosjean Partner" class="h-9 sm:h-10 w-auto">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="assets/loghi/Valle d'Aosta_Confcommercio_logo_nero.png" alt="Confcommercio Partner" class="h-9 sm:h-10 w-auto">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="assets/loghi/logo_consorzio_vda.png" alt="Consorzio VDA Partner" class="h-9 sm:h-10 w-auto">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="assets/loghi/TORREANO-Logo.png" alt="Torreano Partner" class="h-9 sm:h-10 w-auto">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="assets/loghi/Les Montagnards Logo 3S.png" alt="Les Montagnards Partner" class="h-9 sm:h-10 w-auto">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="assets/loghi/LO CROTTEN LOGO_sfondo bianco.png" alt="Lo Crotten Partner" class="h-9 sm:h-10 w-auto">
-                    </div>
-                </div>
+                <div id="partners-scroll-container" class="partners-scroll"></div>
             </div>
         </div>
     </section>
+
+    <script>
+        // Load partner logos dynamically from manifest
+        (function() {
+            const manifestUrl = 'assets/loghi/manifest.json';
+            const container = document.getElementById('partners-scroll-container');
+
+            fetch(manifestUrl)
+                .then(response => response.json())
+                .then(data => {
+                    const partners = data.partners;
+
+                    // Helper function to create a logo element
+                    function createLogoElement(partner) {
+                        const div = document.createElement('div');
+                        div.className = 'partner-logo';
+                        const img = document.createElement('img');
+                        img.src = `assets/loghi/${partner.filename}`;
+                        img.alt = partner.alt;
+                        img.className = 'h-9 sm:h-10 w-auto';
+                        div.appendChild(img);
+                        return div;
+                    }
+
+                    // First set of logos
+                    partners.forEach(partner => {
+                        container.appendChild(createLogoElement(partner));
+                    });
+
+                    // Duplicate set for seamless loop
+                    partners.forEach(partner => {
+                        container.appendChild(createLogoElement(partner));
+                    });
+                })
+                .catch(error => console.error('Error loading partner manifest:', error));
+        })();
+    </script>
 
     <!-- Footer -->
     <footer class="bg-[#07090f] border-t border-white/10">

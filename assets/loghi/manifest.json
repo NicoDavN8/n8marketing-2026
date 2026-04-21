@@ -1,0 +1,32 @@
+{
+  "partners": [
+    {
+      "filename": "emsy_logo_grigio.png",
+      "alt": "EMSY Partner"
+    },
+    {
+      "filename": "New Logo_grosjean.png",
+      "alt": "Grosjean Partner"
+    },
+    {
+      "filename": "Valle d'Aosta_Confcommercio_logo_nero.png",
+      "alt": "Confcommercio Valle d'Aosta"
+    },
+    {
+      "filename": "logo_consorzio_vda.png",
+      "alt": "Consorzio VDA Partner"
+    },
+    {
+      "filename": "TORREANO-Logo.png",
+      "alt": "Torreano Partner"
+    },
+    {
+      "filename": "Les Montagnards Logo 3S.png",
+      "alt": "Les Montagnards Partner"
+    },
+    {
+      "filename": "LO CROTTEN LOGO_sfondo bianco.png",
+      "alt": "Lo Crotten Partner"
+    }
+  ]
+}
