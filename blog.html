@@ -181,10 +181,16 @@ permalink: /blog.html
 
                     {% for post in site.posts %}
                     <article class="bg-[#111316] border border-white/8 rounded-2xl overflow-hidden hover:border-[#f1d74d]/30 transition-all duration-300 group">
-                        <div class="h-48 bg-gradient-to-br from-[#0d1f3c] to-[#0a1628] relative overflow-hidden flex items-center justify-center">
-                            <svg class="w-16 h-16 text-[#4e81ee]/30 group-hover:text-[#4e81ee]/50 transition duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        <div class="h-48 relative overflow-hidden">
+                            {% if post.image %}
+                            <img src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            {% else %}
+                            <div class="w-full h-full bg-gradient-to-br from-[#0d1f3c] to-[#0a1628] flex items-center justify-center">
+                                <svg class="w-16 h-16 text-[#4e81ee]/30 group-hover:text-[#4e81ee]/50 transition duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                            </div>
+                            {% endif %}
                             <div class="absolute bottom-3 left-4">
-                                <span class="text-xs font-bold uppercase tracking-wider text-[#4e81ee] bg-[#4e81ee]/10 border border-[#4e81ee]/20 px-2 py-1 rounded-full">Blog &amp; AI</span>
+                                <span class="text-xs font-bold uppercase tracking-wider text-[#4e81ee] bg-[#4e81ee]/10 border border-[#4e81ee]/20 px-2 py-1 rounded-full backdrop-blur-sm">Blog &amp; AI</span>
                             </div>
                         </div>
                         <div class="p-6">
