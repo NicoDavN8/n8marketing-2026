@@ -130,16 +130,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .expertise-carousel-wrapper {
   position: relative;
-  padding-bottom: 3rem;
+  padding-top: 1.5rem;
+  padding-bottom: 3.5rem;
+  overflow: visible;
 }
 
 .expertise-carousel {
   display: flex;
   overflow-x: auto;
+  overflow-y: visible;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   gap: 1.5rem;
-  padding-bottom: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -300,8 +304,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .testi-carousel-wrapper {
   position: relative;
-  padding-top: 0.5rem;
-  padding-bottom: 3rem;
+  padding-top: 1.5rem;
+  padding-bottom: 3.5rem;
   overflow: visible;
 }
 
@@ -312,8 +316,8 @@ h1, h2, h3, h4, h5, h6 {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   gap: 1.5rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   -ms-overflow-style: none;
