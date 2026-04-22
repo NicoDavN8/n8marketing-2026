@@ -300,6 +300,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .testi-carousel-wrapper {
   position: relative;
+  padding-top: 0.5rem;
   padding-bottom: 3rem;
   overflow: visible;
 }
@@ -311,7 +312,8 @@ h1, h2, h3, h4, h5, h6 {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   gap: 1.5rem;
-  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.5rem;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   -ms-overflow-style: none;
