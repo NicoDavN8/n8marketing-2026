@@ -14,7 +14,7 @@ N°3
 
 Collaborare con N8 Marketing ci ha permesso di scoprire il potenziale concreto dell'Intelligenza Artificiale applicata al nostro business… 
 
-Annalisa   - Marketing Manager di Butterfly English School (da Google) 
+Annalisa D'Amico - Marketing Manager di Butterfly English School (da Google) 
 
 
 N°4
