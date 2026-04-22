@@ -99,67 +99,7 @@ layout: null
         </article>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-[#07090f] border-t border-white/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-                <div>
-                    <a href="{{ site.baseurl }}/index.html" class="flex items-center gap-4 font-heading tracking-tight mb-4">
-                        <img src="{{ site.baseurl }}/assets/images/logo.png" alt="N8 Marketing AI - Logo" class="h-16 w-auto">
-                        <span class="flex items-center">
-                            <span class="text-[#f1d74d] font-black text-3xl">N8</span>
-                            <span class="text-[#4e81ee] font-medium text-2xl ml-1.5">Marketing</span>
-                            <span class="text-[#4e81ee] border border-[#4e81ee] px-1.5 py-0.5 rounded text-[0.65rem] font-bold tracking-widest ml-2 bg-[#4e81ee]/10">AI</span>
-                        </span>
-                    </a>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-5">Marketing Strategico &amp; AI per il territorio</p>
-                </div>
-
-                <div>
-                    <h4 class="text-white font-heading font-bold text-lg mb-4">Contatti</h4>
-                    <div class="space-y-2 text-sm text-gray-400">
-                        <div>
-                            <span class="text-gray-500 text-xs uppercase tracking-wide block mb-0.5">Tel</span>
-                            <a href="tel:+393336771270" class="hover:text-brand-yellow transition">+39 333 67 71 270</a>
-                        </div>
-                        <div>
-                            <span class="text-gray-500 text-xs uppercase tracking-wide block mb-0.5">Email</span>
-                            <a href="mailto:n8@n8marketing.it" class="hover:text-brand-yellow transition">n8@n8marketing.it</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <h4 class="text-white font-heading font-bold text-lg mb-4">Navigazione</h4>
-                    <div class="space-y-2 text-sm text-gray-400">
-                        <a href="{{ site.baseurl }}/index.html" class="block hover:text-brand-yellow transition">Home</a>
-                        <a href="{{ site.baseurl }}/chi-siamo.html" class="block hover:text-brand-yellow transition">Chi Siamo</a>
-                        <a href="{{ site.baseurl }}/blog.html" class="block hover:text-brand-yellow transition">Blog</a>
-                        <a href="{{ site.baseurl }}/index.html#contatti" class="block hover:text-brand-yellow transition font-medium text-[#f1d74d]">Contattaci</a>
-                    </div>
-                </div>
-
-                <div>
-                    <h4 class="text-white font-heading font-bold text-lg mb-4">Dove siamo</h4>
-                    <div class="space-y-3 text-sm text-gray-400 leading-relaxed">
-                        <div>
-                            <span class="text-gray-200 font-medium block mb-0.5">Sede Operativa</span>
-                            Frazione Cheriettes, 70<br>11010 Aymavilles (AO)
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="border-t border-white/10">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex justify-between items-center gap-3">
-                <p class="text-gray-500 text-xs">&copy; 2026 N8 Marketing &mdash; Nicolò Balzani. Tutti i diritti riservati. — P.IVA: 01208070076</p>
-                <div class="flex items-center gap-5 text-xs text-gray-500">
-                    <a href="{{ site.baseurl }}/privacy-policy.html" class="hover:text-gray-300 transition">Privacy Policy</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    {% include footer.html %}
 
     <script src="{{ site.baseurl }}/assets/main.js"></script>
 </body>
