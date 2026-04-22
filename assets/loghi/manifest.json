@@ -13,10 +13,6 @@
       "alt": "Confcommercio Valle d'Aosta"
     },
     {
-      "filename": "logo_consorzio_vda.png",
-      "alt": "Consorzio VDA Partner"
-    },
-    {
       "filename": "TORREANO-Logo.png",
       "alt": "Torreano Partner"
     },
@@ -27,6 +23,10 @@
     {
       "filename": "LO CROTTEN LOGO_sfondo bianco.png",
       "alt": "Lo Crotten Partner"
+    },
+    {
+      "filename": "logo_butterfly.png",
+      "alt": "Butterfly Partner"
     }
   ]
 }
