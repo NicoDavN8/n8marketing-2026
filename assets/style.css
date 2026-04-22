@@ -473,13 +473,55 @@ h1, h2, h3, h4, h5, h6 {
 /* Liste */
 .prose ul {
   color: #cbd5e1;
-  padding-left: 1.5rem;
+  list-style: none;
+  padding-left: 0;
   margin-bottom: 1.25rem;
 }
 
 .prose ul li {
-  margin-bottom: 0.4rem;
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.6rem;
   line-height: 1.75;
+}
+
+.prose ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #4e81ee;
+  flex-shrink: 0;
+}
+
+.prose ol {
+  color: #cbd5e1;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.25rem;
+  counter-reset: ol-counter;
+}
+
+.prose ol li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.75;
+  counter-increment: ol-counter;
+}
+
+.prose ol li::before {
+  content: counter(ol-counter) '.';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #4e81ee;
 }
 
 /* Separatori */
