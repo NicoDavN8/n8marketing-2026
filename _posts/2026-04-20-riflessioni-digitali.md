@@ -56,7 +56,7 @@ Certo, ci sono alcune condizioni necessarie perché funzioni:
 
 Vale la pena sottolineare che quel cliente non usa nessun social media. La sua intera strategia si basa su **SEO e Google Ads**. E funziona benissimo, almeno per ora.
 
-![Marketing digitale in Valle d'Aosta](/assets/images/riflessioni-digitali-marketing-vda.webp)
+<img src="{{ site.baseurl }}/assets/images/riflessioni-digitali-marketing-vda.webp" alt="Marketing digitale in Valle d'Aosta">
 
 ---
 
@@ -88,7 +88,7 @@ Per questo ho iniziato a dedicare parte del mio tempo a sessioni di formazione d
 
 Il digitale non è un costo da minimizzare, è una competenza da sviluppare.
 
-![Lavoro di team e formazione aziendale](/assets/images/lavoro-marketing-social-media-vda.webp)
+<img src="{{ site.baseurl }}/assets/images/lavoro-marketing-social-media-vda.webp" alt="Lavoro di team e formazione aziendale">
 
 ---
 
@@ -105,28 +105,28 @@ La montagna insegna una cosa su tutte: chi si prepara bene, arriva in vetta.
 ## FAQ {#faq}
 
 <div class="post-faq">
-  <div class="faq-item">
-    <strong>Conviene fare Google Ads in Valle d'Aosta?</strong>
+  <details class="faq-item">
+    <summary>Conviene fare Google Ads in Valle d'Aosta?</summary>
     <p>Sì, conviene molto. La concorrenza online è ancora bassa rispetto al resto d'Italia: costi per click ridotti e ritorni elevati. Un esempio concreto: un cliente ha generato 4.200€ di prenotazioni con soli 550€ investiti.</p>
-  </div>
-  <div class="faq-item">
-    <strong>Quanto costa fare Google Ads per una struttura ricettiva in Valle d'Aosta?</strong>
+  </details>
+  <details class="faq-item">
+    <summary>Quanto costa fare Google Ads per una struttura ricettiva in Valle d'Aosta?</summary>
     <p>Grazie alla bassa concorrenza locale è possibile ottenere risultati significativi anche con budget contenuti, a partire da poche centinaia di euro al mese. La chiave è scegliere le parole chiave giuste e avere un sito ottimizzato.</p>
-  </div>
-  <div class="faq-item">
-    <strong>Come può l'AI aiutare il marketing di una piccola impresa valdostana?</strong>
+  </details>
+  <details class="faq-item">
+    <summary>Come può l'AI aiutare il marketing di una piccola impresa valdostana?</summary>
     <p>L'intelligenza artificiale supporta la creazione di contenuti, l'ottimizzazione delle campagne, l'analisi dei competitor e la gestione dei social media. Permette di risparmiare tempo su attività ripetitive, lasciando spazio alla strategia e alla relazione con i clienti.</p>
-  </div>
-  <div class="faq-item">
-    <strong>Quali social media sono più efficaci per le imprese in Valle d'Aosta?</strong>
+  </details>
+  <details class="faq-item">
+    <summary>Quali social media sono più efficaci per le imprese in Valle d'Aosta?</summary>
     <p>Instagram è ottimo per turismo, ristorazione e artigianato. LinkedIn è utile per il B2B e per costruire credibilità professionale. TikTok sta crescendo anche per i pubblici locali, specialmente per contenuti autentici e dietro le quinte.</p>
-  </div>
-  <div class="faq-item">
-    <strong>Cos'è la formazione aziendale nel marketing digitale?</strong>
+  </details>
+  <details class="faq-item">
+    <summary>Cos'è la formazione aziendale nel marketing digitale?</summary>
     <p>È un percorso che aiuta imprenditori e team a gestire in autonomia SEO, Google Ads, social media, analytics e AI. L'obiettivo è rendere l'azienda più consapevole e capace di prendere decisioni strategiche migliori.</p>
-  </div>
-  <div class="faq-item">
-    <strong>Vale la pena investire nel digitale per un'attività in Valle d'Aosta?</strong>
+  </details>
+  <details class="faq-item">
+    <summary>Vale la pena investire nel digitale per un'attività in Valle d'Aosta?</summary>
     <p>Assolutamente sì. Il mercato digitale valdostano è ancora poco saturo: un vantaggio competitivo enorme per chi inizia ora. Il ritorno sull'investimento è storicamente superiore alla media nazionale proprio per la bassa concorrenza online.</p>
-  </div>
+  </details>
 </div>

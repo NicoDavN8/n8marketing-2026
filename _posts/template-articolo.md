@@ -33,7 +33,7 @@ Paragrafo introduttivo. Spiega di cosa parla l'articolo e perché vale la pena l
 
 Testo della sezione. Usa il **grassetto** per evidenziare concetti chiave e keyword importanti.
 
-![Descrizione immagine alt text](/assets/images/NOME-IMMAGINE.webp)
+<img src="{{ site.baseurl }}/assets/images/NOME-IMMAGINE.webp" alt="Descrizione immagine">
 
 ---
 
@@ -56,16 +56,16 @@ Testo della sezione conclusiva. Chiudi con una frase forte o una call to action 
 ## FAQ {#faq}
 
 <div class="post-faq">
-  <div class="faq-item">
-    <strong>Prima domanda frequente?</strong>
+  <details class="faq-item">
+    <summary>Prima domanda frequente?</summary>
     <p>Risposta completa alla prima domanda.</p>
-  </div>
-  <div class="faq-item">
-    <strong>Seconda domanda frequente?</strong>
+  </details>
+  <details class="faq-item">
+    <summary>Seconda domanda frequente?</summary>
     <p>Risposta completa alla seconda domanda.</p>
-  </div>
-  <div class="faq-item">
-    <strong>Terza domanda frequente?</strong>
+  </details>
+  <details class="faq-item">
+    <summary>Terza domanda frequente?</summary>
     <p>Risposta completa alla terza domanda.</p>
-  </div>
+  </details>
 </div>
