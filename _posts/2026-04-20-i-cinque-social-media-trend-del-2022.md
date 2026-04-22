@@ -5,8 +5,6 @@ date: 2026-04-20
 image: /assets/images/boxe-trend.webp
 ---
 
-![Social media trend](/assets/images/boxe-trend.webp)
-
 #### Quale direzione prenderanno i social media nel 2022? Sarà l’anno della svolta con il sorpasso di TikTok alla piattaforma Facebook? Andiamo a vedere 5 trend per una strategia efficace dei tuoi social media!
 
 I tentativi di arginare l’onda cinese di **TikTok** a suon di imitazione sembra aver retto e in casa Meta si festeggia il nuovo anno con il **primato di Facebook e Instagram** come i social media numero uno in Italia e nel Mondo, ma per quanto tempo ancora sarà così?
@@ -23,11 +21,11 @@ Su un’utenza attiva sui social così suddivisa:
 - 77,5% della Generazione X;
 - 48,2% dei Baby Boomers;
 
-![Grafico utenti social](/assets/images/grafico-utenti-2022.webp)
+<img src="{{ site.baseurl }}/assets/images/grafico-utenti-2022.webp" alt="Grafico utenti social media 2022">
 
 Insomma il trono di Facebook e dei suoi fratelli potrebbe essere messo in discussione? Andiamo a capire **quali sono i punti forti** su cui si sviluppa a piattaforma di TikTok e **quali sono i trend efficaci** da seguire sia per i profili privati che per le aziende? (fonte [Hootsuite](https://www.hootsuite.com/it/research/social-trends))
 
-![Boxe TikTok vs Instagram](/assets/images/boxe-trend.webp)
+<img src="{{ site.baseurl }}/assets/images/boxe-trend.webp" alt="Boxe TikTok vs Instagram trend social media">
 
 Per cercare di dare una risposta esaustiva e completa sono state individuate **5 macro aree**:
 
