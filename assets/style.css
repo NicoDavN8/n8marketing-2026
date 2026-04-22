@@ -423,3 +423,144 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.5;
   transition: opacity 0.3s ease;
 }
+
+/* =============================================
+   Blog Post — Tipografia e contenuto
+   ============================================= */
+
+/* Immagini inline nel post */
+.prose img {
+  border-radius: 0.75rem;
+  margin: 2rem auto;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+  width: 100%;
+  height: auto;
+}
+
+/* H2 con accento giallo */
+.prose h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  border-left: 4px solid #FACC15;
+  padding-left: 0.85rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* H3 e H4 */
+.prose h3, .prose h4 {
+  font-family: 'Outfit', sans-serif;
+  color: #e2e8f0;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Paragrafi */
+.prose p {
+  color: #cbd5e1;
+  line-height: 1.85;
+  margin-bottom: 1.25rem;
+}
+
+/* Grassetto */
+.prose strong {
+  color: #f1d74d;
+  font-weight: 600;
+}
+
+/* Liste */
+.prose ul {
+  color: #cbd5e1;
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.prose ul li {
+  margin-bottom: 0.4rem;
+  line-height: 1.75;
+}
+
+/* Separatori */
+.prose hr {
+  border-color: rgba(255,255,255,0.08);
+  margin: 2rem 0;
+}
+
+/* =============================================
+   Blog Post — Indice (TOC)
+   ============================================= */
+
+.post-toc {
+  background: rgba(78, 129, 238, 0.07);
+  border: 1px solid rgba(78, 129, 238, 0.3);
+  border-radius: 0.75rem;
+  padding: 1.5rem 1.75rem;
+  margin: 2rem 0;
+}
+
+.post-toc p strong,
+.post-toc > strong {
+  display: block;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #4e81ee;
+  margin-bottom: 0.75rem;
+}
+
+.post-toc ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-toc ul li {
+  margin-bottom: 0.4rem;
+}
+
+.post-toc ul li a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.post-toc ul li a:hover {
+  color: #f1d74d;
+}
+
+/* =============================================
+   Blog Post — FAQ
+   ============================================= */
+
+.post-faq {
+  margin-top: 2.5rem;
+}
+
+.post-faq .faq-item {
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  padding: 1.25rem 0;
+}
+
+.post-faq .faq-item:last-child {
+  border-bottom: none;
+}
+
+.post-faq .faq-item strong {
+  display: block;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff !important;
+  margin-bottom: 0.5rem;
+}
+
+.post-faq .faq-item p {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  margin: 0;
+}
