@@ -2,7 +2,7 @@
 layout: post
 title: "I cinque social media trend del 2022"
 date: 2026-04-20
-image: /assets/images/boxe-trend.webp
+image: /assets/images/incontro-di-box.webp
 ---
 
 #### Quale direzione prenderanno i social media nel 2022? Sarà l’anno della svolta con il sorpasso di TikTok alla piattaforma Facebook? Andiamo a vedere 5 trend per una strategia efficace dei tuoi social media!
