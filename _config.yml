@@ -26,6 +26,8 @@ defaults:
 
 # Exclude files
 exclude:
-  - README.md
   - Gemfile
-  - .gitignore
+  - Gemfile.lock
+  - vendor/
+  - node_modules/
+  - vercel.json
